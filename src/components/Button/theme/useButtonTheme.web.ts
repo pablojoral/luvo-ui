@@ -14,10 +14,11 @@ interface UseButtonThemeWebParams {
   readonly size: ButtonSize;
   readonly rounded?: boolean;
   readonly fullWidth?: boolean;
+  readonly alignLeft?: boolean;
   readonly disabled?: boolean;
 }
 
-export const useButtonTheme = ({ variant, size, rounded, fullWidth, disabled }: UseButtonThemeWebParams) => {
+export const useButtonTheme = ({ variant, size, rounded, fullWidth, alignLeft, disabled }: UseButtonThemeWebParams) => {
   const theme = useBaseTheme();
 
   const containerStyle: CSSProperties = useMemo(
@@ -29,7 +30,7 @@ export const useButtonTheme = ({ variant, size, rounded, fullWidth, disabled }: 
     display: 'inline-flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: alignLeft ? 'flex-start' : 'center',
     cursor: disabled ? 'not-allowed' : 'pointer',
     borderWidth: '1px',
     borderStyle: 'solid',
@@ -40,7 +41,7 @@ export const useButtonTheme = ({ variant, size, rounded, fullWidth, disabled }: 
     gap: toPx(theme.spacing['spacing-xs']),
     opacity: disabled ? 0.5 : 1,
     width: fullWidth ? '100%' : undefined,
-  }), [rounded, variant, size, fullWidth, disabled, theme]);
+  }), [rounded, variant, size, fullWidth, alignLeft, disabled, theme]);
 
   return { containerStyle, buttonStyle };
 };

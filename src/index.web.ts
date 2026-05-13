@@ -3,7 +3,9 @@
 // the correct implementations.
 
 export * from './tokens';
-export * from './theme';
+// Cherry-pick from ./theme — useTheme is overridden below with the web variant.
+export { ThemeContext, ThemeProvider, useBaseTheme, DefaultTheme, DarkTheme } from './theme';
+export type { Theme, ThemeConstants, ShadowBoxTheme, ShadowCardTheme, ShadowFloatingTheme, ShadowBottomNavTheme, LetterSpacingTheme, ZIndexTheme, ShadowBox, TagVariant } from './theme';
 
 export { Text } from './components/Text/Text.web';
 export type { TextProps } from './components/Text/types';
@@ -73,9 +75,6 @@ export type { AuthModeToggleProps } from './components/AuthModeToggle';
 export { ErrorBoundary } from './components/ErrorBoundary';
 export type { ErrorBoundaryProps } from './components/ErrorBoundary';
 
-export { LoadErrorState } from './components/LoadErrorState';
-export type { LoadErrorStateProps } from './components/LoadErrorState';
-
 export { AuthRequiredScreen } from './components/AuthRequiredScreen';
 export type { AuthRequiredScreenProps } from './components/AuthRequiredScreen';
 
@@ -109,4 +108,13 @@ export type { TagButtonProps } from './components/TagButton';
 export { LocationLabel } from './components/LocationLabel';
 export type { LocationLabelProps } from './components/LocationLabel';
 
+export { LaundryMapMarker } from './components/LaundryMapMarker/LaundryMapMarker.web';
+export type { LaundryMapMarkerProps, LaundryMarkerData, LaundryMachine, LaundryLocation } from './components/LaundryMapMarker';
+
+export { MachineCard } from './components/MachineCard/MachineCard.web';
+export type { MachineCardProps, MachineCardMachine, MachineCardLabels } from './components/MachineCard';
+
 export type { BaseTheme } from './tokens/types';
+
+// Web-specific: override useTheme with the web variant (no safe-area insets).
+export { useTheme } from './theme/hooks/useTheme.web';
