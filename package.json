@@ -5,10 +5,12 @@
   "description": "Luvo shared design system and base UI primitives for React Native and web",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
     "./web": {
+      "types": "./dist/index.web.d.ts",
       "import": "./dist/index.web.js",
       "require": "./dist/index.web.cjs"
     }
