@@ -5,6 +5,7 @@ import type {
   FontColor,
   FontSize,
   FontWeight,
+  IconSize,
   Spacing,
   SurfaceColor,
 } from '../../../tokens/types';
@@ -57,6 +58,13 @@ export const fontWeightMap: Record<ButtonVariant, Record<ButtonSize, FontWeight>
   tertiary:    { xs: 'light', sm: 'light', md: 'regular', xl: 'semibold' },
   destructive: { xs: 'light', sm: 'light', md: 'regular', xl: 'semibold' },
   link:        { xs: 'semibold', sm: 'semibold', md: 'semibold', xl: 'semibold' },
+};
+
+export const iconSizeMap: Record<ButtonSize, IconSize> = {
+  xs: 'icon-size-xs',
+  sm: 'icon-size-sm',
+  md: 'icon-size-md',
+  xl: 'icon-size-lg',
 };
 
 // 'link' gets underline; all others have no decoration.
