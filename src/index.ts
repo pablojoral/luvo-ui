@@ -68,9 +68,6 @@ export type { AuthModeToggleProps } from './components/AuthModeToggle';
 export { ErrorBoundary } from './components/ErrorBoundary';
 export type { ErrorBoundaryProps } from './components/ErrorBoundary';
 
-export { LoadErrorState } from './components/LoadErrorState';
-export type { LoadErrorStateProps } from './components/LoadErrorState';
-
 export { AuthRequiredScreen } from './components/AuthRequiredScreen';
 export type { AuthRequiredScreenProps } from './components/AuthRequiredScreen';
 
@@ -104,4 +101,12 @@ export type { TagButtonProps } from './components/TagButton';
 export { LocationLabel } from './components/LocationLabel';
 export type { LocationLabelProps } from './components/LocationLabel';
 
+export { LaundryMapMarker } from './components/LaundryMapMarker';
+export type { LaundryMapMarkerProps, LaundryMarkerData, LaundryMachine, LaundryLocation } from './components/LaundryMapMarker';
+
+export { MachineCard } from './components/MachineCard';
+export type { MachineCardProps, MachineCardMachine, MachineCardLabels } from './components/MachineCard';
+
 export type { BaseTheme } from './tokens/types';
+// useTheme, DefaultTheme, DarkTheme, and new theme types (Theme, ThemeConstants, etc.)
+// are re-exported via 'export * from ./theme' above.
