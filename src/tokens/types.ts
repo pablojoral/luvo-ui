@@ -71,6 +71,17 @@ export interface CornerRadTheme {
   readonly 'corner-rad-full': number;
 }
 
+export interface BorderWidthTheme {
+  readonly 'border-width-none': number;
+  readonly 'border-width-xs': number;
+  readonly 'border-width-sm': number;
+  readonly 'border-width-md': number;
+  readonly 'border-width-lg': number;
+  readonly 'border-width-xl': number;
+  readonly 'border-width-xxl': number;
+  readonly 'border-width-xxxl': number;
+}
+
 export interface BorderColorTheme {
   readonly 'border-primary': string;
   readonly 'border-secondary': string;
@@ -79,6 +90,21 @@ export interface BorderColorTheme {
   readonly 'border-invert': string;
   readonly 'border-error': string;
   readonly 'border-transparent': string;
+}
+
+export interface OverlayColorTheme {
+  readonly modal: string;
+  readonly dimmer: string;
+  readonly backdrop: string;
+  readonly glassButton: string;
+}
+
+export interface ComponentSizeTheme {
+  readonly fab: number;
+  readonly iconContainer: number;
+  readonly cardMaxWidth: number;
+  readonly descriptionInput: number;
+  readonly laundryImage: number;
 }
 
 export interface IconSizeTheme {
@@ -161,7 +187,10 @@ export interface BaseTheme {
   readonly fontColor: FontColorTheme;
   readonly cornerRad: CornerRadTheme;
   readonly borderColor: BorderColorTheme;
+  readonly borderWidth: BorderWidthTheme;
   readonly iconSize: IconSizeTheme;
+  readonly overlayColor: OverlayColorTheme;
+  readonly componentSize: ComponentSizeTheme;
 }
 
 // Convenience key types for use as prop types
@@ -170,6 +199,7 @@ export type SurfaceColor = keyof SurfaceColorTheme;
 export type FontFamily = keyof FontFamilyTheme;
 export type CornerRad = keyof CornerRadTheme;
 export type BorderColor = keyof BorderColorTheme;
+export type BorderWidth = keyof BorderWidthTheme;
 export type FontSize = keyof FontSizeTheme;
 export type FontWeight = keyof FontWeightTheme;
 export type LineHeight = keyof LineHeightTheme;

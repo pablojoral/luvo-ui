@@ -22,7 +22,7 @@ export const useTextTheme = (params: UseTextThemeWebParams) => {
     fontSize: toPx(theme.fontSize[params.fontSize]),
     color: theme.fontColor[params.color],
     ...(params.lineHeight !== undefined && { lineHeight: toPx(theme.lineHeight[params.lineHeight]) }),
-    ...(params.textAlign !== undefined && { textAlign: params.textAlign }),
+    ...(params.textAlign !== undefined && params.textAlign !== 'auto' && { textAlign: params.textAlign }),
   };
 
   return { style, theme };

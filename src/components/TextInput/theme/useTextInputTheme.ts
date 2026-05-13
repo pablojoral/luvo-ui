@@ -30,7 +30,7 @@ export const useTextInputTheme = ({
       flexDirection: 'row',
       alignItems: 'center',
       minHeight: theme.spacing['spacing-xxxxl'],
-      borderWidth: 1,
+      borderWidth: theme.borderWidth['border-width-xs'],
       borderRadius: theme.cornerRad['corner-rad-md'],
       backgroundColor: theme.surfaceColor['surface-primary'],
       borderColor: error ? theme.borderColor['border-error'] : theme.borderColor['border-primary'],
@@ -49,9 +49,17 @@ export const useTextInputTheme = ({
     [color, theme],
   );
 
-  // These two are structurally static — no token values
+  // Structurally static — no token values
   const footerStyle: ViewStyle = { flexDirection: 'row', justifyContent: 'flex-end' };
   const errorTextStyle: TextStyle = { flex: 1 };
+
+  const eyeButtonStyle: ViewStyle = useMemo(
+    () => ({
+      paddingLeft: theme.spacing['spacing-xs'],
+      justifyContent: 'center',
+    }),
+    [theme],
+  );
 
   const styles = {
     container: containerStyle,
@@ -59,6 +67,7 @@ export const useTextInputTheme = ({
     input: inputStyle,
     footer: footerStyle,
     errorText: errorTextStyle,
+    eyeButton: eyeButtonStyle,
   };
 
   return { styles, placeholderTextColor: theme.fontColor[placeholderColor] };

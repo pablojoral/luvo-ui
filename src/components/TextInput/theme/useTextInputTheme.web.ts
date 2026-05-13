@@ -52,5 +52,16 @@ export const useTextInputTheme = ({
     justifyContent: 'flex-end',
   };
 
-  return { containerStyle, inputWrapperStyle, inputStyle, footerStyle, theme };
+  const eyeButtonStyle: CSSProperties = {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    paddingLeft: toPx(theme.spacing['spacing-xs']),
+    color: theme.fontColor['font-placeholder'],
+    fontSize: toPx(theme.fontSize['font-size-xl']),
+    display: 'flex',
+    alignItems: 'center',
+  };
+
+  return { containerStyle, inputWrapperStyle, inputStyle, footerStyle, eyeButtonStyle, theme };
 };

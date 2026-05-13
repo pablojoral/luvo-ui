@@ -1,5 +1,6 @@
 export { Colors } from './colors';
 export type { Color } from './colors';
+export type { MachineStatus, MachineType } from './machineTypes';
 export { defaultTheme } from './defaultTheme';
 export { darkTheme } from './darkTheme';
 export type {
@@ -10,6 +11,9 @@ export type {
   FontFamilyTheme,
   CornerRadTheme,
   BorderColorTheme,
+  BorderWidthTheme,
+  OverlayColorTheme,
+  ComponentSizeTheme,
   IconSizeTheme,
   FontSizeTheme,
   FontWeightTheme,
@@ -20,6 +24,7 @@ export type {
   FontFamily,
   CornerRad,
   BorderColor,
+  BorderWidth,
   FontSize,
   FontWeight,
   LineHeight,

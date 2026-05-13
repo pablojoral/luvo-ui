@@ -15,19 +15,25 @@ export const Button = ({
   label,
   variant = 'primary',
   size = 'md',
+  // iconName is accepted for API parity but not rendered on web (no react-native-svg)
+  iconName: _iconName,
   onPress,
+  fullWidth,
+  alignLeft,
   disabled,
   submitting,
-  fullWidth,
+  stale,
   rounded,
 }: ButtonProps) => {
   const theme = useBaseTheme();
+  const isDisabled = disabled || stale || submitting;
   const { containerStyle, buttonStyle } = useButtonTheme({
     variant,
     size,
     fullWidth,
+    alignLeft,
     rounded,
-    disabled: disabled ?? submitting,
+    disabled: isDisabled,
   });
 
   const textDecoration = textDecorationMap[variant];
@@ -47,7 +53,7 @@ export const Button = ({
     <div style={containerStyle}>
       <button
         type="button"
-        disabled={disabled ?? submitting}
+        disabled={isDisabled}
         onClick={onPress}
         style={buttonStyle}
       >
