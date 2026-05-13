@@ -1,5 +1,6 @@
 export { Colors } from './colors';
 export type { Color } from './colors';
+export type { MachineStatus, MachineType } from './machineTypes';
 export { defaultTheme } from './defaultTheme';
 export { darkTheme } from './darkTheme';
 export type {

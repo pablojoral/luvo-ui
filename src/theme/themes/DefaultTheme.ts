@@ -1,6 +1,6 @@
 import { DefaultTheme as RNNavigationTheme } from '@react-navigation/native';
 
-import { Colors } from '../constants/colors';
+import { Colors } from '../../tokens/colors';
 import type { ThemeConstants } from '../types/Theme';
 
 export const DefaultThemeConstants: ThemeConstants = {

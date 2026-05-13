@@ -18,6 +18,7 @@ export const MachineCard = ({ machine, labels, onPress }: MachineCardProps) => {
 
   return (
     <Animated.View entering={FadeIn} exiting={FadeOut}>
+      {/* TouchableOpacity used directly: MachineCard needs a full-bleed pressable container, not the label-centric Button API */}
       <TouchableOpacity
         style={styles.container}
         onPress={onPress}
