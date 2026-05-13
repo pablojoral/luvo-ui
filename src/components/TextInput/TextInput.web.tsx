@@ -51,7 +51,7 @@ export const TextInput = ({
         <input
           type={resolvedSecureTextEntry ? 'password' : 'text'}
           value={value}
-          onChange={e => onChangeText?.(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => onChangeText?.(e.currentTarget.value)}
           placeholder={placeholder}
           disabled={!editable}
           maxLength={maxLength}

@@ -6,6 +6,7 @@ import type { TextProps } from './types';
 
 interface TextComponentProps extends TextProps {
   readonly style?: RNTextProps['style'];
+  readonly numberOfLines?: number;
 }
 
 export const Text = ({
@@ -16,11 +17,12 @@ export const Text = ({
   lineHeight,
   textAlign,
   style,
+  numberOfLines,
 }: TextComponentProps) => {
   const { styles } = useTextTheme({ fontSize, color, fontWeight, lineHeight, textAlign });
 
   return (
-    <RNText style={[styles.text, style]}>
+    <RNText style={[styles.text, style]} numberOfLines={numberOfLines}>
       {children}
     </RNText>
   );
