@@ -38,6 +38,7 @@ __export(src_exports, {
   AvailabilityTag: () => AvailabilityTag,
   BottomSheet: () => BottomSheet,
   Button: () => Button,
+  Colors: () => Colors,
   ConcurrencyTag: () => ConcurrencyTag,
   DarkTheme: () => DarkThemeConstants,
   DefaultTheme: () => DefaultThemeConstants,
@@ -517,77 +518,6 @@ var import_react_native_safe_area_context = require("react-native-safe-area-cont
 
 // src/theme/themes/DarkTheme.ts
 var import_native = require("@react-navigation/native");
-
-// src/theme/constants/colors.ts
-var Colors2 = {
-  // Essentials
-  "colors-white": "#FEFEFE",
-  "colors-black": "#000000",
-  "colors-semi-transparent": "rgba(0, 0, 0, 0.5)",
-  "colors-transparent": "transparent",
-  // Grey scale
-  "colors-grey-25": "#f4f4f5",
-  "colors-grey-50": "#eaeaeb",
-  "colors-grey-100": "#d5d6d7",
-  "colors-grey-200": "#abadb0",
-  "colors-grey-300": "#828488",
-  "colors-grey-400": "#585b61",
-  "colors-grey-500": "#2f323a",
-  "colors-grey-600": "#25282e",
-  "colors-grey-700": "#1c1e22",
-  "colors-grey-800": "#121417",
-  "colors-grey-900": "#090a0b",
-  // Primary (Lavender / Purple tones)
-  "colors-lavender-25": "#fcfbfd",
-  "colors-lavender-50": "#faf7fb",
-  "colors-lavender-100": "#f6f0f8",
-  "colors-lavender-200": "#eee2f2",
-  "colors-lavender-300": "#e6d4ec",
-  "colors-lavender-400": "#dec6e6",
-  "colors-lavender-500": "#d6b8e0",
-  "colors-lavender-600": "#ab93b3",
-  "colors-lavender-700": "#806e86",
-  "colors-lavender-800": "#554959",
-  "colors-lavender-900": "#2a242c",
-  // Secondary (Rose / Pink tones)
-  "colors-rose-25": "#fdf6f7",
-  "colors-rose-50": "#fbeef0",
-  "colors-rose-100": "#f7dee2",
-  "colors-rose-200": "#efbdc6",
-  "colors-rose-300": "#e79ca9",
-  "colors-rose-400": "#df7b8d",
-  "colors-rose-500": "#d75b71",
-  "colors-rose-600": "#ac485a",
-  "colors-rose-700": "#813643",
-  "colors-rose-800": "#56242d",
-  "colors-rose-900": "#2b1216",
-  // Status / UI colors
-  "colors-green-25": "#f3fcf4",
-  "colors-green-50": "#e6f9e6",
-  "colors-green-100": "#c8f0cb",
-  "colors-green-300": "#70d77a",
-  "colors-green-500": "#00B300",
-  "colors-green-700": "#117a12",
-  "colors-green-900": "#0b4e0b",
-  "colors-red-25": "#fff6f6",
-  "colors-red-50": "#fbeef0",
-  "colors-red-100": "#FFEDED",
-  "colors-red-300": "#ff9b9b",
-  "colors-red-500": "#FF5959",
-  "colors-red-600": "#FF3B3B",
-  "colors-red-800": "#b62424",
-  "colors-red-900": "#7a1414",
-  "colors-yellow-25": "#fffbf3",
-  "colors-yellow-50": "#fbeef0",
-  "colors-yellow-100": "#fff1c2",
-  "colors-yellow-300": "#ffdf70",
-  "colors-yellow-500": "#FFCD00",
-  "colors-yellow-600": "#e6b800",
-  "colors-yellow-800": "#997a00",
-  "colors-yellow-900": "#664e00"
-};
-
-// src/theme/themes/DarkTheme.ts
 var DarkThemeConstants = {
   navBarHeight: 108,
   spacing: {
@@ -605,55 +535,55 @@ var DarkThemeConstants = {
     "spacing-max": 96
   },
   surfaceColor: {
-    "surface-primary": Colors2["colors-grey-600"],
-    "surface-secondary": Colors2["colors-grey-700"],
-    "surface-button": Colors2["colors-lavender-700"],
-    "surface-tertiary": Colors2["colors-grey-500"],
-    "surface-background": Colors2["colors-grey-800"],
-    "surface-surface": Colors2["colors-grey-700"],
-    "surface-disabled": Colors2["colors-grey-500"],
-    "surface-invert": Colors2["colors-lavender-700"],
-    "surface-success": Colors2["colors-green-900"],
-    "surface-success-subtle": Colors2["colors-green-700"],
-    "surface-error": Colors2["colors-red-900"],
-    "surface-error-subtle": Colors2["colors-red-800"],
-    "surface-warning": Colors2["colors-yellow-900"],
-    "surface-warning-subtle": Colors2["colors-yellow-900"],
-    "surface-tertiary-subtle": Colors2["colors-grey-600"],
-    "surface-status-available": Colors2["colors-green-900"],
-    "surface-status-available-subtle": Colors2["colors-green-700"],
-    "surface-status-in-use": Colors2["colors-rose-900"],
-    "surface-status-in-use-subtle": Colors2["colors-rose-800"],
-    "surface-status-out-of-order": Colors2["colors-grey-500"],
-    "surface-status-out-of-order-subtle": Colors2["colors-grey-600"],
-    "surface-status-maintenance": Colors2["colors-yellow-900"],
-    "surface-status-maintenance-subtle": Colors2["colors-yellow-900"],
+    "surface-primary": Colors["colors-grey-600"],
+    "surface-secondary": Colors["colors-grey-700"],
+    "surface-button": Colors["colors-lavender-700"],
+    "surface-tertiary": Colors["colors-grey-500"],
+    "surface-background": Colors["colors-grey-800"],
+    "surface-surface": Colors["colors-grey-700"],
+    "surface-disabled": Colors["colors-grey-500"],
+    "surface-invert": Colors["colors-lavender-700"],
+    "surface-success": Colors["colors-green-900"],
+    "surface-success-subtle": Colors["colors-green-700"],
+    "surface-error": Colors["colors-red-900"],
+    "surface-error-subtle": Colors["colors-red-800"],
+    "surface-warning": Colors["colors-yellow-900"],
+    "surface-warning-subtle": Colors["colors-yellow-900"],
+    "surface-tertiary-subtle": Colors["colors-grey-600"],
+    "surface-status-available": Colors["colors-green-900"],
+    "surface-status-available-subtle": Colors["colors-green-700"],
+    "surface-status-in-use": Colors["colors-rose-900"],
+    "surface-status-in-use-subtle": Colors["colors-rose-800"],
+    "surface-status-out-of-order": Colors["colors-grey-500"],
+    "surface-status-out-of-order-subtle": Colors["colors-grey-600"],
+    "surface-status-maintenance": Colors["colors-yellow-900"],
+    "surface-status-maintenance-subtle": Colors["colors-yellow-900"],
     "surface-transparent": "transparent",
-    "surface-dark": Colors2["colors-grey-900"]
+    "surface-dark": Colors["colors-grey-900"]
   },
   shadowBox: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.6,
     shadowRadius: 4,
     elevation: 8
   },
   shadowCard: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.35,
     shadowRadius: 6,
     elevation: 4
   },
   shadowFloating: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.55,
     shadowRadius: 12,
     elevation: 8
   },
   shadowBottomNav: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: -4 },
     shadowOpacity: 0.35,
     shadowRadius: 6,
@@ -699,12 +629,12 @@ var DarkThemeConstants = {
     "corner-rad-full": 9999
   },
   borderColor: {
-    "border-primary": Colors2["colors-grey-400"],
-    "border-secondary": Colors2["colors-grey-500"],
-    "border-disabled": Colors2["colors-grey-600"],
-    "border-placeholder": Colors2["colors-grey-300"],
-    "border-invert": Colors2["colors-grey-200"],
-    "border-error": Colors2["colors-red-500"],
+    "border-primary": Colors["colors-grey-400"],
+    "border-secondary": Colors["colors-grey-500"],
+    "border-disabled": Colors["colors-grey-600"],
+    "border-placeholder": Colors["colors-grey-300"],
+    "border-invert": Colors["colors-grey-200"],
+    "border-error": Colors["colors-red-500"],
     "border-transparent": "transparent"
   },
   fontSize: {
@@ -735,20 +665,20 @@ var DarkThemeConstants = {
     "line-height-xxxl": 32
   },
   fontColor: {
-    "font-primary": Colors2["colors-grey-25"],
-    "font-secondary": Colors2["colors-lavender-400"],
-    "font-highlight": Colors2["colors-rose-400"],
-    "font-light": Colors2["colors-grey-300"],
-    "font-disabled": Colors2["colors-grey-400"],
-    "font-placeholder": Colors2["colors-grey-300"],
-    "font-invert": Colors2["colors-grey-900"],
-    "font-error": Colors2["colors-red-500"],
-    "font-success": Colors2["colors-green-300"],
-    "font-warning": Colors2["colors-yellow-300"],
-    "font-status-available": Colors2["colors-green-300"],
-    "font-status-in-use": Colors2["colors-rose-400"],
-    "font-status-out-of-order": Colors2["colors-grey-300"],
-    "font-status-maintenance": Colors2["colors-yellow-300"]
+    "font-primary": Colors["colors-grey-25"],
+    "font-secondary": Colors["colors-lavender-400"],
+    "font-highlight": Colors["colors-rose-400"],
+    "font-light": Colors["colors-grey-300"],
+    "font-disabled": Colors["colors-grey-400"],
+    "font-placeholder": Colors["colors-grey-300"],
+    "font-invert": Colors["colors-grey-900"],
+    "font-error": Colors["colors-red-500"],
+    "font-success": Colors["colors-green-300"],
+    "font-warning": Colors["colors-yellow-300"],
+    "font-status-available": Colors["colors-green-300"],
+    "font-status-in-use": Colors["colors-rose-400"],
+    "font-status-out-of-order": Colors["colors-grey-300"],
+    "font-status-maintenance": Colors["colors-yellow-300"]
   },
   letterSpacing: {
     label: 1.5
@@ -776,7 +706,7 @@ var DarkThemeConstants = {
     ...import_native.DarkTheme,
     colors: {
       ...import_native.DarkTheme.colors,
-      background: Colors2["colors-grey-800"]
+      background: Colors["colors-grey-800"]
     }
   }
 };
@@ -800,55 +730,55 @@ var DefaultThemeConstants = {
     "spacing-max": 96
   },
   surfaceColor: {
-    "surface-primary": Colors2["colors-white"],
-    "surface-secondary": Colors2["colors-rose-50"],
-    "surface-button": Colors2["colors-lavender-100"],
-    "surface-tertiary": Colors2["colors-grey-100"],
-    "surface-background": Colors2["colors-lavender-50"],
-    "surface-surface": Colors2["colors-lavender-300"],
-    "surface-disabled": Colors2["colors-lavender-600"],
-    "surface-invert": Colors2["colors-lavender-500"],
-    "surface-success": Colors2["colors-green-50"],
-    "surface-success-subtle": Colors2["colors-green-25"],
-    "surface-error": Colors2["colors-red-50"],
-    "surface-error-subtle": Colors2["colors-red-25"],
-    "surface-warning": Colors2["colors-yellow-100"],
-    "surface-warning-subtle": Colors2["colors-yellow-25"],
-    "surface-tertiary-subtle": Colors2["colors-grey-25"],
-    "surface-status-available": Colors2["colors-green-50"],
-    "surface-status-available-subtle": Colors2["colors-green-25"],
-    "surface-status-in-use": Colors2["colors-rose-100"],
-    "surface-status-in-use-subtle": Colors2["colors-rose-50"],
-    "surface-status-out-of-order": Colors2["colors-grey-50"],
-    "surface-status-out-of-order-subtle": Colors2["colors-grey-25"],
-    "surface-status-maintenance": Colors2["colors-yellow-100"],
-    "surface-status-maintenance-subtle": Colors2["colors-yellow-25"],
+    "surface-primary": Colors["colors-white"],
+    "surface-secondary": Colors["colors-rose-50"],
+    "surface-button": Colors["colors-lavender-100"],
+    "surface-tertiary": Colors["colors-grey-100"],
+    "surface-background": Colors["colors-lavender-50"],
+    "surface-surface": Colors["colors-lavender-300"],
+    "surface-disabled": Colors["colors-lavender-600"],
+    "surface-invert": Colors["colors-lavender-500"],
+    "surface-success": Colors["colors-green-50"],
+    "surface-success-subtle": Colors["colors-green-25"],
+    "surface-error": Colors["colors-red-50"],
+    "surface-error-subtle": Colors["colors-red-25"],
+    "surface-warning": Colors["colors-yellow-100"],
+    "surface-warning-subtle": Colors["colors-yellow-25"],
+    "surface-tertiary-subtle": Colors["colors-grey-25"],
+    "surface-status-available": Colors["colors-green-50"],
+    "surface-status-available-subtle": Colors["colors-green-25"],
+    "surface-status-in-use": Colors["colors-rose-100"],
+    "surface-status-in-use-subtle": Colors["colors-rose-50"],
+    "surface-status-out-of-order": Colors["colors-grey-50"],
+    "surface-status-out-of-order-subtle": Colors["colors-grey-25"],
+    "surface-status-maintenance": Colors["colors-yellow-100"],
+    "surface-status-maintenance-subtle": Colors["colors-yellow-25"],
     "surface-transparent": "transparent",
-    "surface-dark": Colors2["colors-grey-900"]
+    "surface-dark": Colors["colors-grey-900"]
   },
   shadowBox: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5
   },
   shadowCard: {
-    shadowColor: Colors2["colors-lavender-900"],
+    shadowColor: Colors["colors-lavender-900"],
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.08,
     shadowRadius: 16,
     elevation: 4
   },
   shadowFloating: {
-    shadowColor: Colors2["colors-lavender-900"],
+    shadowColor: Colors["colors-lavender-900"],
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.12,
     shadowRadius: 24,
     elevation: 8
   },
   shadowBottomNav: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: -4 },
     shadowOpacity: 0.18,
     shadowRadius: 6,
@@ -894,12 +824,12 @@ var DefaultThemeConstants = {
     "corner-rad-full": 9999
   },
   borderColor: {
-    "border-primary": Colors2["colors-grey-300"],
-    "border-secondary": Colors2["colors-grey-100"],
-    "border-disabled": Colors2["colors-grey-100"],
-    "border-placeholder": Colors2["colors-grey-400"],
-    "border-invert": Colors2["colors-white"],
-    "border-error": Colors2["colors-red-300"],
+    "border-primary": Colors["colors-grey-300"],
+    "border-secondary": Colors["colors-grey-100"],
+    "border-disabled": Colors["colors-grey-100"],
+    "border-placeholder": Colors["colors-grey-400"],
+    "border-invert": Colors["colors-white"],
+    "border-error": Colors["colors-red-300"],
     "border-transparent": "transparent"
   },
   fontSize: {
@@ -930,20 +860,20 @@ var DefaultThemeConstants = {
     "line-height-xxxl": 32
   },
   fontColor: {
-    "font-primary": Colors2["colors-grey-900"],
-    "font-secondary": Colors2["colors-grey-300"],
-    "font-highlight": Colors2["colors-rose-500"],
-    "font-light": Colors2["colors-grey-400"],
-    "font-disabled": Colors2["colors-grey-400"],
-    "font-placeholder": Colors2["colors-grey-400"],
-    "font-invert": Colors2["colors-white"],
-    "font-error": Colors2["colors-red-600"],
-    "font-success": Colors2["colors-green-500"],
-    "font-warning": Colors2["colors-yellow-800"],
-    "font-status-available": Colors2["colors-green-700"],
-    "font-status-in-use": Colors2["colors-rose-500"],
-    "font-status-out-of-order": Colors2["colors-grey-300"],
-    "font-status-maintenance": Colors2["colors-yellow-800"]
+    "font-primary": Colors["colors-grey-900"],
+    "font-secondary": Colors["colors-grey-300"],
+    "font-highlight": Colors["colors-rose-500"],
+    "font-light": Colors["colors-grey-400"],
+    "font-disabled": Colors["colors-grey-400"],
+    "font-placeholder": Colors["colors-grey-400"],
+    "font-invert": Colors["colors-white"],
+    "font-error": Colors["colors-red-600"],
+    "font-success": Colors["colors-green-500"],
+    "font-warning": Colors["colors-yellow-800"],
+    "font-status-available": Colors["colors-green-700"],
+    "font-status-in-use": Colors["colors-rose-500"],
+    "font-status-out-of-order": Colors["colors-grey-300"],
+    "font-status-maintenance": Colors["colors-yellow-800"]
   },
   letterSpacing: {
     label: 1.5
@@ -971,7 +901,7 @@ var DefaultThemeConstants = {
     ...import_native2.DefaultTheme,
     colors: {
       ...import_native2.DefaultTheme.colors,
-      background: Colors2["colors-white"]
+      background: Colors["colors-white"]
     }
   }
 };
@@ -1063,8 +993,8 @@ var Text = ({
   style,
   numberOfLines
 }) => {
-  const { styles: styles3 } = useTextTheme({ fontSize, color, fontWeight, lineHeight, textAlign });
-  return /* @__PURE__ */ import_react5.default.createElement(import_react_native.Text, { style: [styles3.text, style], numberOfLines }, children);
+  const { styles: styles4 } = useTextTheme({ fontSize, color, fontWeight, lineHeight, textAlign });
+  return /* @__PURE__ */ import_react5.default.createElement(import_react_native.Text, { style: [styles4.text, style], numberOfLines }, children);
 };
 
 // src/components/Button/Button.tsx
@@ -2131,7 +2061,7 @@ var useTextInputTheme = ({
     }),
     [theme]
   );
-  const styles3 = {
+  const styles4 = {
     container: containerStyle,
     inputWrapper: inputWrapperStyle,
     input: inputStyle,
@@ -2139,7 +2069,7 @@ var useTextInputTheme = ({
     errorText: errorTextStyle,
     eyeButton: eyeButtonStyle
   };
-  return { styles: styles3, placeholderTextColor: theme.fontColor[placeholderColor] };
+  return { styles: styles4, placeholderTextColor: theme.fontColor[placeholderColor] };
 };
 
 // src/components/TextInput/TextInput.tsx
@@ -2154,20 +2084,20 @@ var TextInput = ({
   secureTextEntry,
   ...rest
 }) => {
-  const { styles: styles3, placeholderTextColor } = useTextInputTheme({ error: !!error, color, placeholderColor });
+  const { styles: styles4, placeholderTextColor } = useTextInputTheme({ error: !!error, color, placeholderColor });
   const { isVisible, handleToggleVisibility, resolvedSecureTextEntry } = useTextInput(secureTextEntry);
   const remaining = maxLength !== void 0 ? maxLength - (value?.length ?? 0) : void 0;
-  return /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles3.container }, label ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, label) : null, /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles3.inputWrapper }, /* @__PURE__ */ import_react14.default.createElement(
+  return /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles4.container }, label ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, label) : null, /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles4.inputWrapper }, /* @__PURE__ */ import_react14.default.createElement(
     import_react_native6.TextInput,
     {
-      style: [styles3.input, style],
+      style: [styles4.input, style],
       placeholderTextColor,
       maxLength,
       value,
       secureTextEntry: resolvedSecureTextEntry,
       ...rest
     }
-  ), secureTextEntry ? /* @__PURE__ */ import_react14.default.createElement(import_react_native6.TouchableOpacity, { onPress: handleToggleVisibility, style: styles3.eyeButton }, /* @__PURE__ */ import_react14.default.createElement(Icon, { name: isVisible ? "eye-outline" : "eye-off-outline", size: "font-size-xl", color: "font-placeholder" })) : null), /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles3.footer }, error ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error", style: styles3.errorText }, error) : null, remaining !== void 0 ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-xs", color: "font-placeholder" }, remaining) : null));
+  ), secureTextEntry ? /* @__PURE__ */ import_react14.default.createElement(import_react_native6.TouchableOpacity, { onPress: handleToggleVisibility, style: styles4.eyeButton }, /* @__PURE__ */ import_react14.default.createElement(Icon, { name: isVisible ? "eye-outline" : "eye-off-outline", size: "font-size-xl", color: "font-placeholder" })) : null), /* @__PURE__ */ import_react14.default.createElement(import_react_native6.View, { style: styles4.footer }, error ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error", style: styles4.errorText }, error) : null, remaining !== void 0 ? /* @__PURE__ */ import_react14.default.createElement(Text, { fontSize: "font-size-xs", color: "font-placeholder" }, remaining) : null));
 };
 
 // src/components/Switch/Switch.tsx
@@ -2443,7 +2373,7 @@ var import_react_native12 = require("react-native");
 var import_react_native11 = require("react-native");
 var useLabelTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native11.StyleSheet.create({
+  const styles4 = import_react_native11.StyleSheet.create({
     container: {
       flexDirection: "row",
       alignItems: "center",
@@ -2454,7 +2384,7 @@ var useLabelTheme = () => {
       flexShrink: 1
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/Label/Label.tsx
@@ -2467,8 +2397,8 @@ var Label = ({
   children,
   style
 }) => {
-  const { styles: styles3 } = useLabelTheme();
-  return /* @__PURE__ */ import_react21.default.createElement(import_react_native12.View, { style: [styles3.container, style] }, /* @__PURE__ */ import_react21.default.createElement(SvgIcon, { name: iconName, size: iconSize, color }), /* @__PURE__ */ import_react21.default.createElement(Text, { fontSize, color, style: styles3.text, numberOfLines }, children));
+  const { styles: styles4 } = useLabelTheme();
+  return /* @__PURE__ */ import_react21.default.createElement(import_react_native12.View, { style: [styles4.container, style] }, /* @__PURE__ */ import_react21.default.createElement(SvgIcon, { name: iconName, size: iconSize, color }), /* @__PURE__ */ import_react21.default.createElement(Text, { fontSize, color, style: styles4.text, numberOfLines }, children));
 };
 
 // src/components/ConcurrencyTag/ConcurrencyTag.tsx
@@ -2502,7 +2432,7 @@ var import_react22 = require("react");
 var import_react_native13 = require("react-native");
 var useConcurrencyTagTheme = (color) => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native13.StyleSheet.create({
+  const styles4 = import_react_native13.StyleSheet.create({
     row: {
       flexDirection: "row",
       alignItems: "center",
@@ -2518,14 +2448,14 @@ var useConcurrencyTagTheme = (color) => {
       backgroundColor: theme.fontColor[color]
     };
   }, [color, theme]);
-  return { styles: styles3, dotStyle };
+  return { styles: styles4, dotStyle };
 };
 
 // src/components/ConcurrencyTag/ConcurrencyTag.tsx
 var ConcurrencyTag = ({ available, total, labels }) => {
   const { label, color } = useConcurrencyTag({ available, total, labels });
-  const { styles: styles3, dotStyle } = useConcurrencyTagTheme(color);
-  return /* @__PURE__ */ import_react23.default.createElement(import_react_native14.View, { style: styles3.row }, /* @__PURE__ */ import_react23.default.createElement(import_react_native14.View, { style: dotStyle }), /* @__PURE__ */ import_react23.default.createElement(Text, { fontSize: "font-size-sm", color }, label));
+  const { styles: styles4, dotStyle } = useConcurrencyTagTheme(color);
+  return /* @__PURE__ */ import_react23.default.createElement(import_react_native14.View, { style: styles4.row }, /* @__PURE__ */ import_react23.default.createElement(import_react_native14.View, { style: dotStyle }), /* @__PURE__ */ import_react23.default.createElement(Text, { fontSize: "font-size-sm", color }, label));
 };
 
 // src/components/TimeTag/TimeTag.tsx
@@ -2618,7 +2548,7 @@ var DOT_SIZE = 6;
 var DOT_ACTIVE_WIDTH = 18;
 var useStepIndicatorTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native15.StyleSheet.create({
+  const styles4 = import_react_native15.StyleSheet.create({
     row: {
       flexDirection: "row",
       justifyContent: "center",
@@ -2631,7 +2561,7 @@ var useStepIndicatorTheme = () => {
     }
   });
   return {
-    styles: styles3,
+    styles: styles4,
     dotSize: DOT_SIZE,
     dotActiveWidth: DOT_ACTIVE_WIDTH,
     dotColor: theme.surfaceColor["surface-disabled"],
@@ -2642,7 +2572,7 @@ var useStepIndicatorTheme = () => {
 // src/components/StepIndicator/theme/useDotAnimation.ts
 var SPRING = { damping: 16, stiffness: 200, mass: 0.6 };
 var useDotAnimation = (active) => {
-  const { styles: styles3, dotSize, dotActiveWidth, dotColor, dotActiveColor } = useStepIndicatorTheme();
+  const { styles: styles4, dotSize, dotActiveWidth, dotColor, dotActiveColor } = useStepIndicatorTheme();
   const width = (0, import_react_native_reanimated.useSharedValue)(active ? dotActiveWidth : dotSize);
   const opacity = (0, import_react_native_reanimated.useSharedValue)(active ? 1 : 0.35);
   (0, import_react27.useEffect)(() => {
@@ -2654,7 +2584,7 @@ var useDotAnimation = (active) => {
     opacity: opacity.value
   }));
   return {
-    dotStyle: styles3.dot,
+    dotStyle: styles4.dot,
     animStyle,
     backgroundColor: active ? dotActiveColor : dotColor
   };
@@ -2668,9 +2598,9 @@ var Dot = ({ active }) => {
 
 // src/components/StepIndicator/StepIndicator.tsx
 var StepIndicator = ({ total, current }) => {
-  const { styles: styles3 } = useStepIndicatorTheme();
+  const { styles: styles4 } = useStepIndicatorTheme();
   if (total <= 1) return null;
-  return /* @__PURE__ */ import_react29.default.createElement(import_react_native16.View, { style: styles3.row }, Array.from({ length: total }).map((_, i) => /* @__PURE__ */ import_react29.default.createElement(Dot, { key: i, active: i === current })));
+  return /* @__PURE__ */ import_react29.default.createElement(import_react_native16.View, { style: styles4.row }, Array.from({ length: total }).map((_, i) => /* @__PURE__ */ import_react29.default.createElement(Dot, { key: i, active: i === current })));
 };
 
 // src/components/ActionModal/ActionModal.tsx
@@ -2684,7 +2614,7 @@ var COLOR_RED_600 = "#FF3B3B";
 var useActionModalTheme = (variant = "neutral") => {
   const theme = useBaseTheme();
   const isDestructive = variant === "destructive";
-  const styles3 = import_react_native17.StyleSheet.create({
+  const styles4 = import_react_native17.StyleSheet.create({
     overlay: {
       flex: 1,
       backgroundColor: theme.overlayColor.modal,
@@ -2736,7 +2666,7 @@ var useActionModalTheme = (variant = "neutral") => {
       alignItems: "center"
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/ActionModal/ActionModal.tsx
@@ -2751,16 +2681,16 @@ var ActionModal = ({
   variant = "neutral",
   icon = "AlertTriangle"
 }) => {
-  const { styles: styles3 } = useActionModalTheme(variant);
-  return /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Modal, { visible, transparent: true, animationType: "fade", onRequestClose: onCancel }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Pressable, { style: styles3.overlay, onPress: onCancel }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Pressable, { style: styles3.card, onPress: () => {
-  } }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.View, { style: styles3.iconContainer }, /* @__PURE__ */ import_react30.default.createElement(
+  const { styles: styles4 } = useActionModalTheme(variant);
+  return /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Modal, { visible, transparent: true, animationType: "fade", onRequestClose: onCancel }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Pressable, { style: styles4.overlay, onPress: onCancel }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.Pressable, { style: styles4.card, onPress: () => {
+  } }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.View, { style: styles4.iconContainer }, /* @__PURE__ */ import_react30.default.createElement(
     SvgIcon,
     {
       name: icon,
       size: "icon-size-xl",
       color: variant === "destructive" ? "font-error" : "font-secondary"
     }
-  )), /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "extrabold", style: styles3.title }, title), /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-xs", color: "font-light", style: styles3.body }, body), /* @__PURE__ */ import_react30.default.createElement(import_react_native18.View, { style: styles3.actions }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.TouchableOpacity, { style: styles3.confirmButton, onPress: onConfirm, activeOpacity: 0.8 }, /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-md", fontWeight: "bold", color: "font-invert" }, confirmLabel)), /* @__PURE__ */ import_react30.default.createElement(import_react_native18.TouchableOpacity, { style: styles3.cancelButton, onPress: onCancel, activeOpacity: 0.7 }, /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, cancelLabel))))));
+  )), /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "extrabold", style: styles4.title }, title), /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-xs", color: "font-light", style: styles4.body }, body), /* @__PURE__ */ import_react30.default.createElement(import_react_native18.View, { style: styles4.actions }, /* @__PURE__ */ import_react30.default.createElement(import_react_native18.TouchableOpacity, { style: styles4.confirmButton, onPress: onConfirm, activeOpacity: 0.8 }, /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-md", fontWeight: "bold", color: "font-invert" }, confirmLabel)), /* @__PURE__ */ import_react30.default.createElement(import_react_native18.TouchableOpacity, { style: styles4.cancelButton, onPress: onCancel, activeOpacity: 0.7 }, /* @__PURE__ */ import_react30.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, cancelLabel))))));
 };
 
 // src/components/SocialAuth/SocialAuth.tsx
@@ -2776,7 +2706,7 @@ var import_react_native_svg29 = __toESM(require("react-native-svg"));
 var import_react_native19 = require("react-native");
 var useAppleSignInButtonTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native19.StyleSheet.create({
+  const styles4 = import_react_native19.StyleSheet.create({
     button: {
       borderRadius: theme.cornerRad["corner-rad-full"],
       backgroundColor: "#000000"
@@ -2790,7 +2720,7 @@ var useAppleSignInButtonTheme = () => {
       paddingHorizontal: theme.spacing["spacing-md"]
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/AppleSignInButton/AppleSignInButton.tsx
@@ -2802,8 +2732,8 @@ var AppleLogo = () => /* @__PURE__ */ import_react31.default.createElement(impor
   }
 ));
 var AppleSignInButton = ({ label, onPress, disabled, submitting }) => {
-  const { styles: styles3 } = useAppleSignInButtonTheme();
-  return /* @__PURE__ */ import_react31.default.createElement(import_react_native20.TouchableOpacity, { style: styles3.button, onPress, disabled: disabled || submitting, activeOpacity: 0.85 }, /* @__PURE__ */ import_react31.default.createElement(import_react_native20.View, { style: styles3.content }, /* @__PURE__ */ import_react31.default.createElement(AppleLogo, null), /* @__PURE__ */ import_react31.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "medium", color: "font-invert" }, label)));
+  const { styles: styles4 } = useAppleSignInButtonTheme();
+  return /* @__PURE__ */ import_react31.default.createElement(import_react_native20.TouchableOpacity, { style: styles4.button, onPress, disabled: disabled || submitting, activeOpacity: 0.85 }, /* @__PURE__ */ import_react31.default.createElement(import_react_native20.View, { style: styles4.content }, /* @__PURE__ */ import_react31.default.createElement(AppleLogo, null), /* @__PURE__ */ import_react31.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "medium", color: "font-invert" }, label)));
 };
 
 // src/components/GoogleSignInButton/GoogleSignInButton.tsx
@@ -2815,7 +2745,7 @@ var import_react_native_svg30 = __toESM(require("react-native-svg"));
 var import_react_native21 = require("react-native");
 var useGoogleSignInButtonTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native21.StyleSheet.create({
+  const styles4 = import_react_native21.StyleSheet.create({
     button: {
       borderRadius: theme.cornerRad["corner-rad-full"],
       borderWidth: theme.borderWidth["border-width-xs"],
@@ -2831,21 +2761,21 @@ var useGoogleSignInButtonTheme = () => {
       paddingHorizontal: theme.spacing["spacing-md"]
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/GoogleSignInButton/GoogleSignInButton.tsx
 var GoogleLogo = () => /* @__PURE__ */ import_react32.default.createElement(import_react_native_svg30.default, { width: 20, height: 20, viewBox: "0 0 48 48" }, /* @__PURE__ */ import_react32.default.createElement(import_react_native_svg30.Path, { fill: "#FFC107", d: "M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" }), /* @__PURE__ */ import_react32.default.createElement(import_react_native_svg30.Path, { fill: "#FF3D00", d: "m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z" }), /* @__PURE__ */ import_react32.default.createElement(import_react_native_svg30.Path, { fill: "#4CAF50", d: "M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z" }), /* @__PURE__ */ import_react32.default.createElement(import_react_native_svg30.Path, { fill: "#1976D2", d: "M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z" }));
 var GoogleSignInButton = ({ label, onPress, disabled, submitting }) => {
-  const { styles: styles3 } = useGoogleSignInButtonTheme();
-  return /* @__PURE__ */ import_react32.default.createElement(import_react_native22.TouchableOpacity, { style: styles3.button, onPress, disabled: disabled || submitting, activeOpacity: 0.85 }, /* @__PURE__ */ import_react32.default.createElement(import_react_native22.View, { style: styles3.content }, /* @__PURE__ */ import_react32.default.createElement(GoogleLogo, null), /* @__PURE__ */ import_react32.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "medium", color: "font-primary" }, label)));
+  const { styles: styles4 } = useGoogleSignInButtonTheme();
+  return /* @__PURE__ */ import_react32.default.createElement(import_react_native22.TouchableOpacity, { style: styles4.button, onPress, disabled: disabled || submitting, activeOpacity: 0.85 }, /* @__PURE__ */ import_react32.default.createElement(import_react_native22.View, { style: styles4.content }, /* @__PURE__ */ import_react32.default.createElement(GoogleLogo, null), /* @__PURE__ */ import_react32.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "medium", color: "font-primary" }, label)));
 };
 
 // src/components/SocialAuth/theme/useSocialAuthTheme.ts
 var import_react_native23 = require("react-native");
 var useSocialAuthTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native23.StyleSheet.create({
+  const styles4 = import_react_native23.StyleSheet.create({
     container: {
       gap: theme.spacing["spacing-md"]
     },
@@ -2863,7 +2793,7 @@ var useSocialAuthTheme = () => {
       gap: theme.spacing["spacing-sm"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/SocialAuth/SocialAuth.tsx
@@ -2877,8 +2807,8 @@ var SocialAuth = ({
   googleLabel,
   appleLabel
 }) => {
-  const { styles: styles3 } = useSocialAuthTheme();
-  return /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles3.container }, error && /* @__PURE__ */ import_react33.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error" }, error), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles3.dividerRow }, /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles3.dividerLine }), /* @__PURE__ */ import_react33.default.createElement(Text, { fontSize: "font-size-xs", color: "font-secondary" }, dividerLabel), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles3.dividerLine })), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles3.buttonsRow }, /* @__PURE__ */ import_react33.default.createElement(
+  const { styles: styles4 } = useSocialAuthTheme();
+  return /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles4.container }, error && /* @__PURE__ */ import_react33.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error" }, error), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles4.dividerRow }, /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles4.dividerLine }), /* @__PURE__ */ import_react33.default.createElement(Text, { fontSize: "font-size-xs", color: "font-secondary" }, dividerLabel), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles4.dividerLine })), /* @__PURE__ */ import_react33.default.createElement(import_react_native24.View, { style: styles4.buttonsRow }, /* @__PURE__ */ import_react33.default.createElement(
     GoogleSignInButton,
     {
       label: googleLabel,
@@ -2905,7 +2835,7 @@ var import_react_native26 = require("react-native");
 var import_react_native25 = require("react-native");
 var useAuthModeToggleTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native25.StyleSheet.create({
+  const styles4 = import_react_native25.StyleSheet.create({
     row: {
       flexDirection: "row",
       justifyContent: "center",
@@ -2913,16 +2843,16 @@ var useAuthModeToggleTheme = () => {
       gap: theme.spacing["spacing-xxxs"]
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/AuthModeToggle/AuthModeToggle.tsx
 var AuthModeToggle = ({ promptLabel, linkLabel, onPress, disabled }) => {
-  const { styles: styles3 } = useAuthModeToggleTheme();
+  const { styles: styles4 } = useAuthModeToggleTheme();
   return /* @__PURE__ */ import_react34.default.createElement(
     import_react_native26.TouchableOpacity,
     {
-      style: styles3.row,
+      style: styles4.row,
       onPress,
       disabled,
       accessibilityLabel: linkLabel,
@@ -2944,7 +2874,7 @@ var import_react_native28 = require("react-native");
 var import_react_native27 = require("react-native");
 var useErrorScreenTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native27.StyleSheet.create({
+  const styles4 = import_react_native27.StyleSheet.create({
     container: {
       flex: 1,
       alignItems: "center",
@@ -2963,14 +2893,14 @@ var useErrorScreenTheme = () => {
       gap: theme.spacing["spacing-md"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/ErrorBoundary/ErrorScreen.tsx
 var ErrorScreen = ({ onReset, title, body, retryLabel }) => {
-  const { styles: styles3 } = useErrorScreenTheme();
+  const { styles: styles4 } = useErrorScreenTheme();
   const handleRetry = (0, import_react35.useCallback)(() => onReset(), [onReset]);
-  return /* @__PURE__ */ import_react35.default.createElement(import_react_native28.View, { style: styles3.container }, /* @__PURE__ */ import_react35.default.createElement(import_react_native28.View, { style: styles3.content }, /* @__PURE__ */ import_react35.default.createElement(SvgIcon, { name: "AlertTriangle", size: "icon-size-xxxxxxl", color: "font-error" }), /* @__PURE__ */ import_react35.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold", color: "font-primary" }, title), /* @__PURE__ */ import_react35.default.createElement(Text, { fontSize: "font-size-sm", color: "font-secondary", textAlign: "center" }, body)), /* @__PURE__ */ import_react35.default.createElement(Button, { label: retryLabel, onPress: handleRetry, variant: "primary", size: "md" }));
+  return /* @__PURE__ */ import_react35.default.createElement(import_react_native28.View, { style: styles4.container }, /* @__PURE__ */ import_react35.default.createElement(import_react_native28.View, { style: styles4.content }, /* @__PURE__ */ import_react35.default.createElement(SvgIcon, { name: "AlertTriangle", size: "icon-size-xxxxxxl", color: "font-error" }), /* @__PURE__ */ import_react35.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold", color: "font-primary" }, title), /* @__PURE__ */ import_react35.default.createElement(Text, { fontSize: "font-size-sm", color: "font-secondary", textAlign: "center" }, body)), /* @__PURE__ */ import_react35.default.createElement(Button, { label: retryLabel, onPress: handleRetry, variant: "primary", size: "md" }));
 };
 
 // src/components/ErrorBoundary/ErrorBoundary.tsx
@@ -3009,7 +2939,7 @@ var import_react_native30 = require("react-native");
 var import_react_native29 = require("react-native");
 var useAuthRequiredScreenTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native29.StyleSheet.create({
+  const styles4 = import_react_native29.StyleSheet.create({
     container: {
       flex: 1,
       width: "100%",
@@ -3030,7 +2960,7 @@ var useAuthRequiredScreenTheme = () => {
       paddingHorizontal: theme.spacing["spacing-xl"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/AuthRequiredScreen/AuthRequiredScreen.tsx
@@ -3042,8 +2972,8 @@ var AuthRequiredScreen = ({
   onSignIn,
   logo
 }) => {
-  const { styles: styles3 } = useAuthRequiredScreenTheme();
-  return /* @__PURE__ */ import_react37.default.createElement(import_react_native30.View, { style: styles3.container }, /* @__PURE__ */ import_react37.default.createElement(import_react_native30.View, { style: styles3.contentContainer }, logo ?? null, /* @__PURE__ */ import_react37.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold" }, title), /* @__PURE__ */ import_react37.default.createElement(Text, { color: "font-light", fontSize: "font-size-sm" }, subtitle ?? defaultSubtitle)), /* @__PURE__ */ import_react37.default.createElement(Button, { label: signInLabel, onPress: onSignIn }));
+  const { styles: styles4 } = useAuthRequiredScreenTheme();
+  return /* @__PURE__ */ import_react37.default.createElement(import_react_native30.View, { style: styles4.container }, /* @__PURE__ */ import_react37.default.createElement(import_react_native30.View, { style: styles4.contentContainer }, logo ?? null, /* @__PURE__ */ import_react37.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold" }, title), /* @__PURE__ */ import_react37.default.createElement(Text, { color: "font-light", fontSize: "font-size-sm" }, subtitle ?? defaultSubtitle)), /* @__PURE__ */ import_react37.default.createElement(Button, { label: signInLabel, onPress: onSignIn }));
 };
 
 // src/components/Loader/Loader.tsx
@@ -3095,20 +3025,20 @@ var useLoader = () => {
 var import_react_native31 = require("react-native");
 var useLoaderTheme = (size) => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native31.StyleSheet.create({
+  const styles4 = import_react_native31.StyleSheet.create({
     container: {
       alignItems: "center",
       justifyContent: "center"
     }
   });
-  return { styles: styles3, iconSize: theme.iconSize[size] };
+  return { styles: styles4, iconSize: theme.iconSize[size] };
 };
 
 // src/components/Loader/Loader.tsx
 var Loader = ({ size = "icon-size-xxxxxxl" }) => {
   const { avatar, animatedStyle } = useLoader();
-  const { styles: styles3, iconSize } = useLoaderTheme(size);
-  return /* @__PURE__ */ import_react39.default.createElement(import_react_native32.View, { style: styles3.container }, /* @__PURE__ */ import_react39.default.createElement(import_react_native_reanimated4.default.View, { style: animatedStyle }, avatar && /* @__PURE__ */ import_react39.default.createElement(SvgImage, { name: avatar.imageName, height: iconSize, width: iconSize })));
+  const { styles: styles4, iconSize } = useLoaderTheme(size);
+  return /* @__PURE__ */ import_react39.default.createElement(import_react_native32.View, { style: styles4.container }, /* @__PURE__ */ import_react39.default.createElement(import_react_native_reanimated4.default.View, { style: animatedStyle }, avatar && /* @__PURE__ */ import_react39.default.createElement(SvgImage, { name: avatar.imageName, height: iconSize, width: iconSize })));
 };
 
 // src/components/BottomSheet/BottomSheet.tsx
@@ -3150,7 +3080,7 @@ var COLOR_SEMI_TRANSPARENT = "rgba(0, 0, 0, 0.5)";
 var COLOR_GREY_100 = "#d5d6d7";
 var useBottomSheetTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native34.StyleSheet.create({
+  const styles4 = import_react_native34.StyleSheet.create({
     container: {
       flex: 1,
       justifyContent: "flex-end"
@@ -3182,14 +3112,14 @@ var useBottomSheetTheme = () => {
       paddingHorizontal: theme.spacing["spacing-lg"]
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/BottomSheet/BottomSheet.tsx
 var BottomSheet = ({ visible, onClose, title, children }) => {
-  const { styles: styles3 } = useBottomSheetTheme();
+  const { styles: styles4 } = useBottomSheetTheme();
   const { mounted, backdropStyle, sheetStyle } = useBottomSheet(visible);
-  return /* @__PURE__ */ import_react41.default.createElement(import_react_native35.Modal, { visible: mounted, transparent: true, animationType: "none", onRequestClose: onClose }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.View, { style: styles3.container }, /* @__PURE__ */ import_react41.default.createElement(import_react_native_reanimated6.default.View, { style: [styles3.backdrop, backdropStyle] }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.TouchableOpacity, { style: styles3.backdropPress, activeOpacity: 1, onPress: onClose })), /* @__PURE__ */ import_react41.default.createElement(import_react_native_reanimated6.default.View, { style: [styles3.sheet, sheetStyle] }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.View, { style: styles3.handle }), title && /* @__PURE__ */ import_react41.default.createElement(Text, { fontSize: "font-size-md", fontWeight: "semibold", style: styles3.title }, title), children)));
+  return /* @__PURE__ */ import_react41.default.createElement(import_react_native35.Modal, { visible: mounted, transparent: true, animationType: "none", onRequestClose: onClose }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.View, { style: styles4.container }, /* @__PURE__ */ import_react41.default.createElement(import_react_native_reanimated6.default.View, { style: [styles4.backdrop, backdropStyle] }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.TouchableOpacity, { style: styles4.backdropPress, activeOpacity: 1, onPress: onClose })), /* @__PURE__ */ import_react41.default.createElement(import_react_native_reanimated6.default.View, { style: [styles4.sheet, sheetStyle] }, /* @__PURE__ */ import_react41.default.createElement(import_react_native35.View, { style: styles4.handle }), title && /* @__PURE__ */ import_react41.default.createElement(Text, { fontSize: "font-size-md", fontWeight: "semibold", style: styles4.title }, title), children)));
 };
 
 // src/components/PillSelector/PillSelector.tsx
@@ -3236,7 +3166,7 @@ var useAnimatedStyles = ({ options, value, onChange }) => {
 var import_react_native36 = require("react-native");
 var usePillSelectorTheme = ({ backgroundColor, thumbColor }) => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native36.StyleSheet.create({
+  const styles4 = import_react_native36.StyleSheet.create({
     outerContainer: {
       borderRadius: theme.cornerRad["corner-rad-full"],
       backgroundColor: theme.surfaceColor[backgroundColor],
@@ -3263,7 +3193,7 @@ var usePillSelectorTheme = ({ backgroundColor, thumbColor }) => {
       paddingVertical: theme.spacing["spacing-sm"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/PillSelector/PillSelector.tsx
@@ -3275,17 +3205,17 @@ var PillSelector = ({
   thumbColor = "surface-invert",
   ...props
 }) => {
-  const { styles: styles3 } = usePillSelectorTheme({ backgroundColor, thumbColor });
+  const { styles: styles4 } = usePillSelectorTheme({ backgroundColor, thumbColor });
   const { thumbStyle, segmentWidthStyle, onLayout, handlePress } = useAnimatedStyles({
     options,
     value,
     onChange
   });
-  return /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles3.outerContainer }, /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles3.container, onLayout, ...props }, /* @__PURE__ */ import_react43.default.createElement(import_react_native_reanimated8.default.View, { style: [styles3.thumb, thumbStyle, segmentWidthStyle] }), /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles3.row }, options.map((o, i) => /* @__PURE__ */ import_react43.default.createElement(
+  return /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles4.outerContainer }, /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles4.container, onLayout, ...props }, /* @__PURE__ */ import_react43.default.createElement(import_react_native_reanimated8.default.View, { style: [styles4.thumb, thumbStyle, segmentWidthStyle] }), /* @__PURE__ */ import_react43.default.createElement(import_react_native37.View, { style: styles4.row }, options.map((o, i) => /* @__PURE__ */ import_react43.default.createElement(
     import_react_native37.Pressable,
     {
       key: o.value,
-      style: [styles3.segment, segmentWidthStyle],
+      style: [styles4.segment, segmentWidthStyle],
       onPress: () => handlePress(i)
     },
     /* @__PURE__ */ import_react43.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "medium" }, o.label)
@@ -3306,7 +3236,7 @@ var import_react44 = require("react");
 var import_react_native38 = require("react-native");
 var useSelectInputOptionTheme = (selected, isLast) => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native38.StyleSheet.create({
+  const styles4 = import_react_native38.StyleSheet.create({
     container: {
       flexDirection: "row",
       alignItems: "center",
@@ -3318,8 +3248,8 @@ var useSelectInputOptionTheme = (selected, isLast) => {
     }
   });
   const containerStyle = (0, import_react44.useMemo)(
-    () => [styles3.container, selected && { backgroundColor: theme.surfaceColor["surface-button"] }],
-    [styles3.container, selected, theme]
+    () => [styles4.container, selected && { backgroundColor: theme.surfaceColor["surface-button"] }],
+    [styles4.container, selected, theme]
   );
   return { containerStyle };
 };
@@ -3367,7 +3297,7 @@ var useSelectInput = ({ value, options, onChange }) => {
 var import_react_native40 = require("react-native");
 var useSelectInputTheme = ({ error = false, disabled = false } = {}) => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native40.StyleSheet.create({
+  const styles4 = import_react_native40.StyleSheet.create({
     container: {
       width: "100%",
       gap: theme.spacing["spacing-xxs"]
@@ -3392,7 +3322,7 @@ var useSelectInputTheme = ({ error = false, disabled = false } = {}) => {
       overflow: "hidden"
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/SelectInput/SelectInput.tsx
@@ -3405,20 +3335,20 @@ var SelectInput = ({
   error,
   disabled
 }) => {
-  const { styles: styles3 } = useSelectInputTheme({ error: !!error, disabled });
+  const { styles: styles4 } = useSelectInputTheme({ error: !!error, disabled });
   const { modalVisible, showModal, hideModal, select, selectedLabel, chevronStyle } = useSelectInput({
     value,
     options,
     onChange
   });
-  return /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles3.container }, label && /* @__PURE__ */ import_react47.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, label), /* @__PURE__ */ import_react47.default.createElement(import_react_native41.Pressable, { style: styles3.trigger, onPress: disabled ? void 0 : showModal }, /* @__PURE__ */ import_react47.default.createElement(
+  return /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles4.container }, label && /* @__PURE__ */ import_react47.default.createElement(Text, { fontSize: "font-size-sm", fontWeight: "semibold" }, label), /* @__PURE__ */ import_react47.default.createElement(import_react_native41.Pressable, { style: styles4.trigger, onPress: disabled ? void 0 : showModal }, /* @__PURE__ */ import_react47.default.createElement(
     Text,
     {
       fontSize: "font-size-md",
       color: selectedLabel ? "font-primary" : "font-placeholder"
     },
     selectedLabel ?? placeholder ?? ""
-  ), /* @__PURE__ */ import_react47.default.createElement(import_react_native_reanimated10.default.View, { style: chevronStyle }, /* @__PURE__ */ import_react47.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-md", color: "font-secondary" }))), /* @__PURE__ */ import_react47.default.createElement(BottomSheet, { visible: modalVisible, onClose: hideModal, title: label }, /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles3.optionsList }, options.map((option, idx) => /* @__PURE__ */ import_react47.default.createElement(
+  ), /* @__PURE__ */ import_react47.default.createElement(import_react_native_reanimated10.default.View, { style: chevronStyle }, /* @__PURE__ */ import_react47.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-md", color: "font-secondary" }))), /* @__PURE__ */ import_react47.default.createElement(BottomSheet, { visible: modalVisible, onClose: hideModal, title: label }, /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles4.optionsList }, options.map((option, idx) => /* @__PURE__ */ import_react47.default.createElement(
     SelectInputOption,
     {
       key: option.value,
@@ -3427,7 +3357,7 @@ var SelectInput = ({
       isLast: idx === options.length - 1,
       onPress: () => select(option.value)
     }
-  )))), error && /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles3.footer }, /* @__PURE__ */ import_react47.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error" }, error)));
+  )))), error && /* @__PURE__ */ import_react47.default.createElement(import_react_native41.View, { style: styles4.footer }, /* @__PURE__ */ import_react47.default.createElement(Text, { fontSize: "font-size-xs", color: "font-error" }, error)));
 };
 
 // src/components/ScreenHeader/ScreenHeader.tsx
@@ -3475,7 +3405,7 @@ var IconButton = ({
 var import_react_native43 = require("react-native");
 var useScreenHeaderTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native43.StyleSheet.create({
+  const styles4 = import_react_native43.StyleSheet.create({
     container: {
       flexDirection: "row",
       alignItems: "center",
@@ -3489,7 +3419,7 @@ var useScreenHeaderTheme = () => {
       gap: theme.spacing["spacing-xxxs"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/ScreenHeader/ScreenHeader.tsx
@@ -3501,9 +3431,9 @@ var ScreenHeader = ({
   backAccessibilityLabel = "Back"
 }) => {
   const navigation = (0, import_native3.useNavigation)();
-  const { styles: styles3 } = useScreenHeaderTheme();
+  const { styles: styles4 } = useScreenHeaderTheme();
   const handleBack = onBack ?? (() => navigation.goBack());
-  return /* @__PURE__ */ import_react50.default.createElement(import_react_native44.View, { style: styles3.container }, !hideBack ? /* @__PURE__ */ import_react50.default.createElement(
+  return /* @__PURE__ */ import_react50.default.createElement(import_react_native44.View, { style: styles4.container }, !hideBack ? /* @__PURE__ */ import_react50.default.createElement(
     IconButton,
     {
       iconName: "ChevronLeft",
@@ -3511,7 +3441,7 @@ var ScreenHeader = ({
       onPress: handleBack,
       accessibilityLabel: backAccessibilityLabel
     }
-  ) : null, /* @__PURE__ */ import_react50.default.createElement(import_react_native44.View, { style: styles3.titleGroup }, /* @__PURE__ */ import_react50.default.createElement(Text, { fontSize: "font-size-xxl", fontWeight: "bold" }, title), subtitle ? /* @__PURE__ */ import_react50.default.createElement(Text, { fontSize: "font-size-sm", color: "font-secondary" }, subtitle) : null));
+  ) : null, /* @__PURE__ */ import_react50.default.createElement(import_react_native44.View, { style: styles4.titleGroup }, /* @__PURE__ */ import_react50.default.createElement(Text, { fontSize: "font-size-xxl", fontWeight: "bold" }, title), subtitle ? /* @__PURE__ */ import_react50.default.createElement(Text, { fontSize: "font-size-sm", color: "font-secondary" }, subtitle) : null));
 };
 
 // src/components/SafeScreenHeader/SafeScreenHeader.tsx
@@ -3522,7 +3452,7 @@ var import_react_native46 = require("react-native");
 var import_react_native45 = require("react-native");
 var useSafeScreenHeaderTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native45.StyleSheet.create({
+  const styles4 = import_react_native45.StyleSheet.create({
     wrapper: {
       // topInset is a luvo-mobile extended theme field; consuming apps should apply
       // SafeAreaView or their own inset padding above this component.
@@ -3530,7 +3460,7 @@ var useSafeScreenHeaderTheme = () => {
       backgroundColor: theme.surfaceColor["surface-primary"]
     }
   });
-  return { styles: styles3 };
+  return { styles: styles4 };
 };
 
 // src/components/SafeScreenHeader/SafeScreenHeader.tsx
@@ -3541,8 +3471,8 @@ var SafeScreenHeader = ({
   onBack,
   backAccessibilityLabel
 }) => {
-  const { styles: styles3 } = useSafeScreenHeaderTheme();
-  return /* @__PURE__ */ import_react51.default.createElement(import_react_native46.View, { style: styles3.wrapper }, /* @__PURE__ */ import_react51.default.createElement(
+  const { styles: styles4 } = useSafeScreenHeaderTheme();
+  return /* @__PURE__ */ import_react51.default.createElement(import_react_native46.View, { style: styles4.wrapper }, /* @__PURE__ */ import_react51.default.createElement(
     ScreenHeader,
     {
       title,
@@ -3566,7 +3496,7 @@ var import_react_native48 = require("react-native");
 var import_react_native47 = require("react-native");
 var useSettingsMenuItemTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native47.StyleSheet.create({
+  const styles4 = import_react_native47.StyleSheet.create({
     container: {
       flexDirection: "row",
       alignItems: "center",
@@ -3578,31 +3508,31 @@ var useSettingsMenuItemTheme = () => {
       flex: 1
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/SettingsMenu/components/SettingsMenuItem/SettingsMenuItem.tsx
 var SettingsMenuItem = ({ label, iconName, onPress }) => {
-  const { styles: styles3 } = useSettingsMenuItemTheme();
-  return /* @__PURE__ */ import_react52.default.createElement(import_react_native48.TouchableOpacity, { style: styles3.container, onPress, activeOpacity: 0.6 }, /* @__PURE__ */ import_react52.default.createElement(SvgIcon, { name: iconName, size: "icon-size-xxl", color: "font-primary" }), /* @__PURE__ */ import_react52.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "medium", style: styles3.label }, label), /* @__PURE__ */ import_react52.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-lg", color: "font-primary" }));
+  const { styles: styles4 } = useSettingsMenuItemTheme();
+  return /* @__PURE__ */ import_react52.default.createElement(import_react_native48.TouchableOpacity, { style: styles4.container, onPress, activeOpacity: 0.6 }, /* @__PURE__ */ import_react52.default.createElement(SvgIcon, { name: iconName, size: "icon-size-xxl", color: "font-primary" }), /* @__PURE__ */ import_react52.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "medium", style: styles4.label }, label), /* @__PURE__ */ import_react52.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-lg", color: "font-primary" }));
 };
 
 // src/components/SettingsMenu/theme/useSettingsMenuTheme.ts
 var import_react_native49 = require("react-native");
 var useSettingsMenuTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native49.StyleSheet.create({
+  const styles4 = import_react_native49.StyleSheet.create({
     container: {
       gap: theme.spacing["spacing-md"]
     }
   });
-  return { styles: styles3, theme };
+  return { styles: styles4, theme };
 };
 
 // src/components/SettingsMenu/SettingsMenu.tsx
 var SettingsMenu = ({ items }) => {
-  const { styles: styles3 } = useSettingsMenuTheme();
-  return /* @__PURE__ */ import_react53.default.createElement(import_react_native50.View, { style: styles3.container }, items.map((item) => /* @__PURE__ */ import_react53.default.createElement(
+  const { styles: styles4 } = useSettingsMenuTheme();
+  return /* @__PURE__ */ import_react53.default.createElement(import_react_native50.View, { style: styles4.container }, items.map((item) => /* @__PURE__ */ import_react53.default.createElement(
     SettingsMenuItem,
     {
       key: item.label,
@@ -3679,18 +3609,18 @@ var useLaundryMapMarker = ({ laundry, showAvailability }) => {
 // src/components/LaundryMapMarker/theme/useLaundryMapMarkerTheme.ts
 var import_react56 = require("react");
 var import_react_native52 = require("react-native");
+var styles3 = import_react_native52.StyleSheet.create({
+  wrapper: {
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "transparent"
+  }
+});
 var useLaundryMapMarkerTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native52.StyleSheet.create({
-    wrapper: {
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundColor: "transparent"
-    }
-  });
   const wrapperStyle = (0, import_react56.useMemo)(
     () => [styles3.wrapper, { padding: theme.spacing["spacing-sm"], ...theme.shadowFloating }],
-    [styles3.wrapper, theme]
+    [theme]
   );
   return { styles: styles3, wrapperStyle, theme };
 };
@@ -3785,7 +3715,7 @@ var LaundryMapMarker = ({
 };
 
 // src/components/MachineCard/MachineCard.tsx
-var import_react59 = __toESM(require("react"));
+var import_react60 = __toESM(require("react"));
 var import_react_native55 = require("react-native");
 var import_react_native_reanimated11 = __toESM(require("react-native-reanimated"));
 
@@ -3813,62 +3743,66 @@ var useMachineCard = (machine, onPress) => {
 };
 
 // src/components/MachineCard/theme/useMachineCardTheme.ts
+var import_react59 = require("react");
 var import_react_native54 = require("react-native");
 var useMachineCardTheme = () => {
   const theme = useBaseTheme();
-  const styles3 = import_react_native54.StyleSheet.create({
-    container: {
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
-      padding: theme.spacing["spacing-sm"],
-      backgroundColor: theme.surfaceColor["surface-primary"],
-      borderRadius: theme.cornerRad["corner-rad-lg"],
-      ...theme.shadowCard
-    },
-    contentContainer: {
-      flexDirection: "row",
-      alignItems: "center",
-      gap: theme.spacing["spacing-md"]
-    },
-    infoContainer: {
-      gap: theme.spacing["spacing-xs"]
-    },
-    machineInfo: {
-      flexDirection: "row",
-      gap: theme.spacing["spacing-sm"]
-    },
-    statusContainer: {
-      flexDirection: "row",
-      alignItems: "center",
-      gap: theme.spacing["spacing-sm"]
-    },
-    timerContainer: {
-      flexDirection: "row",
-      alignItems: "center",
-      gap: theme.spacing["spacing-xxs"]
-    }
-  });
-  return { styles: styles3, theme };
+  const styles4 = (0, import_react59.useMemo)(
+    () => import_react_native54.StyleSheet.create({
+      container: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: theme.spacing["spacing-sm"],
+        backgroundColor: theme.surfaceColor["surface-primary"],
+        borderRadius: theme.cornerRad["corner-rad-lg"],
+        ...theme.shadowCard
+      },
+      contentContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: theme.spacing["spacing-md"]
+      },
+      infoContainer: {
+        gap: theme.spacing["spacing-xs"]
+      },
+      machineInfo: {
+        flexDirection: "row",
+        gap: theme.spacing["spacing-sm"]
+      },
+      statusContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: theme.spacing["spacing-sm"]
+      },
+      timerContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: theme.spacing["spacing-xxs"]
+      }
+    }),
+    [theme]
+  );
+  return { styles: styles4, theme };
 };
 
 // src/components/MachineCard/MachineCard.tsx
 var MachineCard = ({ machine, labels, onPress }) => {
-  const { styles: styles3 } = useMachineCardTheme();
+  const { styles: styles4 } = useMachineCardTheme();
   const { iconName, availabilityStatus, remainingTime, showTimer, chevronColor } = useMachineCard(
     machine,
     onPress
   );
-  return /* @__PURE__ */ import_react59.default.createElement(import_react_native_reanimated11.default.View, { entering: import_react_native_reanimated11.FadeIn, exiting: import_react_native_reanimated11.FadeOut }, /* @__PURE__ */ import_react59.default.createElement(
+  return /* @__PURE__ */ import_react60.default.createElement(import_react_native_reanimated11.default.View, { entering: import_react_native_reanimated11.FadeIn, exiting: import_react_native_reanimated11.FadeOut }, /* @__PURE__ */ import_react60.default.createElement(
     import_react_native55.TouchableOpacity,
     {
-      style: styles3.container,
+      style: styles4.container,
       onPress,
       activeOpacity: onPress ? 0.7 : 1,
       disabled: !onPress
     },
-    /* @__PURE__ */ import_react59.default.createElement(import_react_native55.View, { style: styles3.contentContainer }, /* @__PURE__ */ import_react59.default.createElement(SvgIcon, { name: iconName, size: "icon-size-xxxl" }), /* @__PURE__ */ import_react59.default.createElement(import_react_native55.View, { style: styles3.infoContainer }, /* @__PURE__ */ import_react59.default.createElement(import_react_native55.View, { style: styles3.machineInfo }, /* @__PURE__ */ import_react59.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold" }, machine.name), /* @__PURE__ */ import_react59.default.createElement(Text, { fontSize: "font-size-sm", color: "font-light" }, "10 Kgs")), /* @__PURE__ */ import_react59.default.createElement(import_react_native55.View, { style: styles3.statusContainer }, /* @__PURE__ */ import_react59.default.createElement(AvailabilityTag, { status: availabilityStatus, labels: labels.availability }), showTimer && /* @__PURE__ */ import_react59.default.createElement(import_react_native55.View, { style: styles3.timerContainer }, /* @__PURE__ */ import_react59.default.createElement(SvgIcon, { name: "Clock", size: "icon-size-xs", color: "font-light" }), /* @__PURE__ */ import_react59.default.createElement(Text, { fontSize: "font-size-sm", color: "font-light" }, remainingTime))))),
-    /* @__PURE__ */ import_react59.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-xxl", color: chevronColor })
+    /* @__PURE__ */ import_react60.default.createElement(import_react_native55.View, { style: styles4.contentContainer }, /* @__PURE__ */ import_react60.default.createElement(SvgIcon, { name: iconName, size: "icon-size-xxxl" }), /* @__PURE__ */ import_react60.default.createElement(import_react_native55.View, { style: styles4.infoContainer }, /* @__PURE__ */ import_react60.default.createElement(import_react_native55.View, { style: styles4.machineInfo }, /* @__PURE__ */ import_react60.default.createElement(Text, { fontSize: "font-size-lg", fontWeight: "semibold" }, machine.name), machine.capacity && /* @__PURE__ */ import_react60.default.createElement(Text, { fontSize: "font-size-sm", color: "font-light" }, machine.capacity)), /* @__PURE__ */ import_react60.default.createElement(import_react_native55.View, { style: styles4.statusContainer }, /* @__PURE__ */ import_react60.default.createElement(AvailabilityTag, { status: availabilityStatus, labels: labels.availability }), showTimer && /* @__PURE__ */ import_react60.default.createElement(import_react_native55.View, { style: styles4.timerContainer }, /* @__PURE__ */ import_react60.default.createElement(SvgIcon, { name: "Clock", size: "icon-size-xs", color: "font-light" }), /* @__PURE__ */ import_react60.default.createElement(Text, { fontSize: "font-size-sm", color: "font-light" }, remainingTime))))),
+    /* @__PURE__ */ import_react60.default.createElement(SvgIcon, { name: "ChevronRight", size: "icon-size-xxl", color: chevronColor })
   ));
 };
 // Annotate the CommonJS export names for ESM import in node:
@@ -3881,6 +3815,7 @@ var MachineCard = ({ machine, labels, onPress }) => {
   AvailabilityTag,
   BottomSheet,
   Button,
+  Colors,
   ConcurrencyTag,
   DarkTheme,
   DefaultTheme,
