@@ -38,6 +38,7 @@ __export(index_web_exports, {
   AvailabilityTag: () => AvailabilityTag,
   BottomSheet: () => BottomSheet,
   Button: () => Button,
+  Colors: () => Colors,
   ConcurrencyTag: () => ConcurrencyTag,
   DarkTheme: () => DarkThemeConstants,
   DefaultTheme: () => DefaultThemeConstants,
@@ -517,77 +518,6 @@ var import_react_native_safe_area_context = require("react-native-safe-area-cont
 
 // src/theme/themes/DarkTheme.ts
 var import_native = require("@react-navigation/native");
-
-// src/theme/constants/colors.ts
-var Colors2 = {
-  // Essentials
-  "colors-white": "#FEFEFE",
-  "colors-black": "#000000",
-  "colors-semi-transparent": "rgba(0, 0, 0, 0.5)",
-  "colors-transparent": "transparent",
-  // Grey scale
-  "colors-grey-25": "#f4f4f5",
-  "colors-grey-50": "#eaeaeb",
-  "colors-grey-100": "#d5d6d7",
-  "colors-grey-200": "#abadb0",
-  "colors-grey-300": "#828488",
-  "colors-grey-400": "#585b61",
-  "colors-grey-500": "#2f323a",
-  "colors-grey-600": "#25282e",
-  "colors-grey-700": "#1c1e22",
-  "colors-grey-800": "#121417",
-  "colors-grey-900": "#090a0b",
-  // Primary (Lavender / Purple tones)
-  "colors-lavender-25": "#fcfbfd",
-  "colors-lavender-50": "#faf7fb",
-  "colors-lavender-100": "#f6f0f8",
-  "colors-lavender-200": "#eee2f2",
-  "colors-lavender-300": "#e6d4ec",
-  "colors-lavender-400": "#dec6e6",
-  "colors-lavender-500": "#d6b8e0",
-  "colors-lavender-600": "#ab93b3",
-  "colors-lavender-700": "#806e86",
-  "colors-lavender-800": "#554959",
-  "colors-lavender-900": "#2a242c",
-  // Secondary (Rose / Pink tones)
-  "colors-rose-25": "#fdf6f7",
-  "colors-rose-50": "#fbeef0",
-  "colors-rose-100": "#f7dee2",
-  "colors-rose-200": "#efbdc6",
-  "colors-rose-300": "#e79ca9",
-  "colors-rose-400": "#df7b8d",
-  "colors-rose-500": "#d75b71",
-  "colors-rose-600": "#ac485a",
-  "colors-rose-700": "#813643",
-  "colors-rose-800": "#56242d",
-  "colors-rose-900": "#2b1216",
-  // Status / UI colors
-  "colors-green-25": "#f3fcf4",
-  "colors-green-50": "#e6f9e6",
-  "colors-green-100": "#c8f0cb",
-  "colors-green-300": "#70d77a",
-  "colors-green-500": "#00B300",
-  "colors-green-700": "#117a12",
-  "colors-green-900": "#0b4e0b",
-  "colors-red-25": "#fff6f6",
-  "colors-red-50": "#fbeef0",
-  "colors-red-100": "#FFEDED",
-  "colors-red-300": "#ff9b9b",
-  "colors-red-500": "#FF5959",
-  "colors-red-600": "#FF3B3B",
-  "colors-red-800": "#b62424",
-  "colors-red-900": "#7a1414",
-  "colors-yellow-25": "#fffbf3",
-  "colors-yellow-50": "#fbeef0",
-  "colors-yellow-100": "#fff1c2",
-  "colors-yellow-300": "#ffdf70",
-  "colors-yellow-500": "#FFCD00",
-  "colors-yellow-600": "#e6b800",
-  "colors-yellow-800": "#997a00",
-  "colors-yellow-900": "#664e00"
-};
-
-// src/theme/themes/DarkTheme.ts
 var DarkThemeConstants = {
   navBarHeight: 108,
   spacing: {
@@ -605,55 +535,55 @@ var DarkThemeConstants = {
     "spacing-max": 96
   },
   surfaceColor: {
-    "surface-primary": Colors2["colors-grey-600"],
-    "surface-secondary": Colors2["colors-grey-700"],
-    "surface-button": Colors2["colors-lavender-700"],
-    "surface-tertiary": Colors2["colors-grey-500"],
-    "surface-background": Colors2["colors-grey-800"],
-    "surface-surface": Colors2["colors-grey-700"],
-    "surface-disabled": Colors2["colors-grey-500"],
-    "surface-invert": Colors2["colors-lavender-700"],
-    "surface-success": Colors2["colors-green-900"],
-    "surface-success-subtle": Colors2["colors-green-700"],
-    "surface-error": Colors2["colors-red-900"],
-    "surface-error-subtle": Colors2["colors-red-800"],
-    "surface-warning": Colors2["colors-yellow-900"],
-    "surface-warning-subtle": Colors2["colors-yellow-900"],
-    "surface-tertiary-subtle": Colors2["colors-grey-600"],
-    "surface-status-available": Colors2["colors-green-900"],
-    "surface-status-available-subtle": Colors2["colors-green-700"],
-    "surface-status-in-use": Colors2["colors-rose-900"],
-    "surface-status-in-use-subtle": Colors2["colors-rose-800"],
-    "surface-status-out-of-order": Colors2["colors-grey-500"],
-    "surface-status-out-of-order-subtle": Colors2["colors-grey-600"],
-    "surface-status-maintenance": Colors2["colors-yellow-900"],
-    "surface-status-maintenance-subtle": Colors2["colors-yellow-900"],
+    "surface-primary": Colors["colors-grey-600"],
+    "surface-secondary": Colors["colors-grey-700"],
+    "surface-button": Colors["colors-lavender-700"],
+    "surface-tertiary": Colors["colors-grey-500"],
+    "surface-background": Colors["colors-grey-800"],
+    "surface-surface": Colors["colors-grey-700"],
+    "surface-disabled": Colors["colors-grey-500"],
+    "surface-invert": Colors["colors-lavender-700"],
+    "surface-success": Colors["colors-green-900"],
+    "surface-success-subtle": Colors["colors-green-700"],
+    "surface-error": Colors["colors-red-900"],
+    "surface-error-subtle": Colors["colors-red-800"],
+    "surface-warning": Colors["colors-yellow-900"],
+    "surface-warning-subtle": Colors["colors-yellow-900"],
+    "surface-tertiary-subtle": Colors["colors-grey-600"],
+    "surface-status-available": Colors["colors-green-900"],
+    "surface-status-available-subtle": Colors["colors-green-700"],
+    "surface-status-in-use": Colors["colors-rose-900"],
+    "surface-status-in-use-subtle": Colors["colors-rose-800"],
+    "surface-status-out-of-order": Colors["colors-grey-500"],
+    "surface-status-out-of-order-subtle": Colors["colors-grey-600"],
+    "surface-status-maintenance": Colors["colors-yellow-900"],
+    "surface-status-maintenance-subtle": Colors["colors-yellow-900"],
     "surface-transparent": "transparent",
-    "surface-dark": Colors2["colors-grey-900"]
+    "surface-dark": Colors["colors-grey-900"]
   },
   shadowBox: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.6,
     shadowRadius: 4,
     elevation: 8
   },
   shadowCard: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.35,
     shadowRadius: 6,
     elevation: 4
   },
   shadowFloating: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.55,
     shadowRadius: 12,
     elevation: 8
   },
   shadowBottomNav: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: -4 },
     shadowOpacity: 0.35,
     shadowRadius: 6,
@@ -699,12 +629,12 @@ var DarkThemeConstants = {
     "corner-rad-full": 9999
   },
   borderColor: {
-    "border-primary": Colors2["colors-grey-400"],
-    "border-secondary": Colors2["colors-grey-500"],
-    "border-disabled": Colors2["colors-grey-600"],
-    "border-placeholder": Colors2["colors-grey-300"],
-    "border-invert": Colors2["colors-grey-200"],
-    "border-error": Colors2["colors-red-500"],
+    "border-primary": Colors["colors-grey-400"],
+    "border-secondary": Colors["colors-grey-500"],
+    "border-disabled": Colors["colors-grey-600"],
+    "border-placeholder": Colors["colors-grey-300"],
+    "border-invert": Colors["colors-grey-200"],
+    "border-error": Colors["colors-red-500"],
     "border-transparent": "transparent"
   },
   fontSize: {
@@ -735,20 +665,20 @@ var DarkThemeConstants = {
     "line-height-xxxl": 32
   },
   fontColor: {
-    "font-primary": Colors2["colors-grey-25"],
-    "font-secondary": Colors2["colors-lavender-400"],
-    "font-highlight": Colors2["colors-rose-400"],
-    "font-light": Colors2["colors-grey-300"],
-    "font-disabled": Colors2["colors-grey-400"],
-    "font-placeholder": Colors2["colors-grey-300"],
-    "font-invert": Colors2["colors-grey-900"],
-    "font-error": Colors2["colors-red-500"],
-    "font-success": Colors2["colors-green-300"],
-    "font-warning": Colors2["colors-yellow-300"],
-    "font-status-available": Colors2["colors-green-300"],
-    "font-status-in-use": Colors2["colors-rose-400"],
-    "font-status-out-of-order": Colors2["colors-grey-300"],
-    "font-status-maintenance": Colors2["colors-yellow-300"]
+    "font-primary": Colors["colors-grey-25"],
+    "font-secondary": Colors["colors-lavender-400"],
+    "font-highlight": Colors["colors-rose-400"],
+    "font-light": Colors["colors-grey-300"],
+    "font-disabled": Colors["colors-grey-400"],
+    "font-placeholder": Colors["colors-grey-300"],
+    "font-invert": Colors["colors-grey-900"],
+    "font-error": Colors["colors-red-500"],
+    "font-success": Colors["colors-green-300"],
+    "font-warning": Colors["colors-yellow-300"],
+    "font-status-available": Colors["colors-green-300"],
+    "font-status-in-use": Colors["colors-rose-400"],
+    "font-status-out-of-order": Colors["colors-grey-300"],
+    "font-status-maintenance": Colors["colors-yellow-300"]
   },
   letterSpacing: {
     label: 1.5
@@ -776,7 +706,7 @@ var DarkThemeConstants = {
     ...import_native.DarkTheme,
     colors: {
       ...import_native.DarkTheme.colors,
-      background: Colors2["colors-grey-800"]
+      background: Colors["colors-grey-800"]
     }
   }
 };
@@ -800,55 +730,55 @@ var DefaultThemeConstants = {
     "spacing-max": 96
   },
   surfaceColor: {
-    "surface-primary": Colors2["colors-white"],
-    "surface-secondary": Colors2["colors-rose-50"],
-    "surface-button": Colors2["colors-lavender-100"],
-    "surface-tertiary": Colors2["colors-grey-100"],
-    "surface-background": Colors2["colors-lavender-50"],
-    "surface-surface": Colors2["colors-lavender-300"],
-    "surface-disabled": Colors2["colors-lavender-600"],
-    "surface-invert": Colors2["colors-lavender-500"],
-    "surface-success": Colors2["colors-green-50"],
-    "surface-success-subtle": Colors2["colors-green-25"],
-    "surface-error": Colors2["colors-red-50"],
-    "surface-error-subtle": Colors2["colors-red-25"],
-    "surface-warning": Colors2["colors-yellow-100"],
-    "surface-warning-subtle": Colors2["colors-yellow-25"],
-    "surface-tertiary-subtle": Colors2["colors-grey-25"],
-    "surface-status-available": Colors2["colors-green-50"],
-    "surface-status-available-subtle": Colors2["colors-green-25"],
-    "surface-status-in-use": Colors2["colors-rose-100"],
-    "surface-status-in-use-subtle": Colors2["colors-rose-50"],
-    "surface-status-out-of-order": Colors2["colors-grey-50"],
-    "surface-status-out-of-order-subtle": Colors2["colors-grey-25"],
-    "surface-status-maintenance": Colors2["colors-yellow-100"],
-    "surface-status-maintenance-subtle": Colors2["colors-yellow-25"],
+    "surface-primary": Colors["colors-white"],
+    "surface-secondary": Colors["colors-rose-50"],
+    "surface-button": Colors["colors-lavender-100"],
+    "surface-tertiary": Colors["colors-grey-100"],
+    "surface-background": Colors["colors-lavender-50"],
+    "surface-surface": Colors["colors-lavender-300"],
+    "surface-disabled": Colors["colors-lavender-600"],
+    "surface-invert": Colors["colors-lavender-500"],
+    "surface-success": Colors["colors-green-50"],
+    "surface-success-subtle": Colors["colors-green-25"],
+    "surface-error": Colors["colors-red-50"],
+    "surface-error-subtle": Colors["colors-red-25"],
+    "surface-warning": Colors["colors-yellow-100"],
+    "surface-warning-subtle": Colors["colors-yellow-25"],
+    "surface-tertiary-subtle": Colors["colors-grey-25"],
+    "surface-status-available": Colors["colors-green-50"],
+    "surface-status-available-subtle": Colors["colors-green-25"],
+    "surface-status-in-use": Colors["colors-rose-100"],
+    "surface-status-in-use-subtle": Colors["colors-rose-50"],
+    "surface-status-out-of-order": Colors["colors-grey-50"],
+    "surface-status-out-of-order-subtle": Colors["colors-grey-25"],
+    "surface-status-maintenance": Colors["colors-yellow-100"],
+    "surface-status-maintenance-subtle": Colors["colors-yellow-25"],
     "surface-transparent": "transparent",
-    "surface-dark": Colors2["colors-grey-900"]
+    "surface-dark": Colors["colors-grey-900"]
   },
   shadowBox: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5
   },
   shadowCard: {
-    shadowColor: Colors2["colors-lavender-900"],
+    shadowColor: Colors["colors-lavender-900"],
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.08,
     shadowRadius: 16,
     elevation: 4
   },
   shadowFloating: {
-    shadowColor: Colors2["colors-lavender-900"],
+    shadowColor: Colors["colors-lavender-900"],
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.12,
     shadowRadius: 24,
     elevation: 8
   },
   shadowBottomNav: {
-    shadowColor: Colors2["colors-black"],
+    shadowColor: Colors["colors-black"],
     shadowOffset: { width: 0, height: -4 },
     shadowOpacity: 0.18,
     shadowRadius: 6,
@@ -894,12 +824,12 @@ var DefaultThemeConstants = {
     "corner-rad-full": 9999
   },
   borderColor: {
-    "border-primary": Colors2["colors-grey-300"],
-    "border-secondary": Colors2["colors-grey-100"],
-    "border-disabled": Colors2["colors-grey-100"],
-    "border-placeholder": Colors2["colors-grey-400"],
-    "border-invert": Colors2["colors-white"],
-    "border-error": Colors2["colors-red-300"],
+    "border-primary": Colors["colors-grey-300"],
+    "border-secondary": Colors["colors-grey-100"],
+    "border-disabled": Colors["colors-grey-100"],
+    "border-placeholder": Colors["colors-grey-400"],
+    "border-invert": Colors["colors-white"],
+    "border-error": Colors["colors-red-300"],
     "border-transparent": "transparent"
   },
   fontSize: {
@@ -930,20 +860,20 @@ var DefaultThemeConstants = {
     "line-height-xxxl": 32
   },
   fontColor: {
-    "font-primary": Colors2["colors-grey-900"],
-    "font-secondary": Colors2["colors-grey-300"],
-    "font-highlight": Colors2["colors-rose-500"],
-    "font-light": Colors2["colors-grey-400"],
-    "font-disabled": Colors2["colors-grey-400"],
-    "font-placeholder": Colors2["colors-grey-400"],
-    "font-invert": Colors2["colors-white"],
-    "font-error": Colors2["colors-red-600"],
-    "font-success": Colors2["colors-green-500"],
-    "font-warning": Colors2["colors-yellow-800"],
-    "font-status-available": Colors2["colors-green-700"],
-    "font-status-in-use": Colors2["colors-rose-500"],
-    "font-status-out-of-order": Colors2["colors-grey-300"],
-    "font-status-maintenance": Colors2["colors-yellow-800"]
+    "font-primary": Colors["colors-grey-900"],
+    "font-secondary": Colors["colors-grey-300"],
+    "font-highlight": Colors["colors-rose-500"],
+    "font-light": Colors["colors-grey-400"],
+    "font-disabled": Colors["colors-grey-400"],
+    "font-placeholder": Colors["colors-grey-400"],
+    "font-invert": Colors["colors-white"],
+    "font-error": Colors["colors-red-600"],
+    "font-success": Colors["colors-green-500"],
+    "font-warning": Colors["colors-yellow-800"],
+    "font-status-available": Colors["colors-green-700"],
+    "font-status-in-use": Colors["colors-rose-500"],
+    "font-status-out-of-order": Colors["colors-grey-300"],
+    "font-status-maintenance": Colors["colors-yellow-800"]
   },
   letterSpacing: {
     label: 1.5
@@ -971,7 +901,7 @@ var DefaultThemeConstants = {
     ...import_native2.DefaultTheme,
     colors: {
       ...import_native2.DefaultTheme.colors,
-      background: Colors2["colors-white"]
+      background: Colors["colors-white"]
     }
   }
 };
@@ -3836,6 +3766,7 @@ var useTheme2 = () => {
   AvailabilityTag,
   BottomSheet,
   Button,
+  Colors,
   ConcurrencyTag,
   DarkTheme,
   DefaultTheme,
