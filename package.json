@@ -6,17 +6,17 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
     "./web": {
       "types": "./dist/index.web.d.ts",
-      "import": "./dist/index.web.js",
-      "require": "./dist/index.web.cjs"
+      "import": "./dist/index.web.mjs",
+      "require": "./dist/index.web.js"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -25,7 +25,8 @@
     "prepare": "tsup",
     "build": "tsup",
     "build:watch": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
   },
   "peerDependencies": {
     "@react-navigation/native": ">=6.0.0",
@@ -62,6 +63,9 @@
   },
   "devDependencies": {
     "@react-navigation/native": "^7.2.4",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "typescript-eslint": "^8.0.0",
     "@types/react": "^19.0.0",
     "@types/react-native-vector-icons": "^6.4.18",
     "react-native": "^0.84.0",
