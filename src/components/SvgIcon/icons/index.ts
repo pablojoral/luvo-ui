@@ -18,6 +18,7 @@ export { default as LogOut } from './LogOut';
 export { default as LuvoCircle } from './LuvoCircle';
 export { default as MapPin } from './MapPin';
 export { default as Map } from './Map';
+export { default as PlusCircle } from './PlusCircle';
 export { default as Profile } from './Profile';
 export { default as QrCode } from './QrCode';
 export { default as Settings } from './Settings';

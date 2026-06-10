@@ -11,4 +11,7 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   external: ['react', 'react-native', 'react-native-svg'],
+  outExtension: ({ format }: { format: string }) => ({
+    js: format === 'cjs' ? '.cjs' : '.js',
+  }),
 });

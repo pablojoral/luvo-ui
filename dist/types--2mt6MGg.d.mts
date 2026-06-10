@@ -506,6 +506,7 @@ declare const icons: {
     LuvoCircle: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
     MapPin: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
     Map: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
+    PlusCircle: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
     Profile: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
     QrCode: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
     Settings: (props: react_native_svg.SvgProps) => React$1.JSX.Element;
