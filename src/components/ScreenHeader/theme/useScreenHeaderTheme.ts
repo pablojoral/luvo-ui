@@ -8,7 +8,7 @@ export const useScreenHeaderTheme = () => {
     container: {
       flexDirection: 'row',
       alignItems: 'center',
-      paddingVertical: theme.spacing['spacing-sm'],
+      paddingVertical: theme.spacing['spacing-xxl'],
       paddingHorizontal: theme.spacing['spacing-md'],
       gap: theme.spacing['spacing-sm'],
       backgroundColor: theme.surfaceColor['surface-primary'],
