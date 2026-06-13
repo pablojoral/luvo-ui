@@ -15,6 +15,7 @@ const statusMap: Record<MachineStatus, AvailabilityStatus> = {
   in_use: 'in-use',
   out_of_order: 'out-of-order',
   maintenance: 'maintenance',
+  offline: 'out-of-order', // offline machines display as unavailable
 };
 
 export const useMachineCard = (machine: MachineCardMachine, onPress?: () => void) => {

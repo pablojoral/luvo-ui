@@ -30,7 +30,7 @@ export const MachineCard = ({ machine, labels, onPress }: MachineCardProps) => {
           <View style={styles.infoContainer}>
             <View style={styles.machineInfo}>
               <Text fontSize="font-size-lg" fontWeight="semibold">
-                {machine.name}
+                {labels.typeLabels[machine.type]} #{machine.number}
               </Text>
               {machine.capacity && (
                 <Text fontSize="font-size-sm" color="font-light">

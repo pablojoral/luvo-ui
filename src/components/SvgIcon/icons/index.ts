@@ -13,6 +13,8 @@ export { default as CreditCard } from './CreditCard';
 export { default as Droplet } from './Droplet';
 export { default as Edit } from './Edit';
 export { default as Gift } from './Gift';
+export { default as Heart } from './Heart';
+export { default as HeartFilled } from './HeartFilled';
 export { default as Info } from './Info';
 export { default as LogOut } from './LogOut';
 export { default as LuvoCircle } from './LuvoCircle';

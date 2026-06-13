@@ -5,7 +5,7 @@ export type { MachineStatus, MachineType };
 
 export interface MachineCardMachine {
   id: number;
-  name: string;
+  number: number;
   type: MachineType;
   status: MachineStatus;
   /** Seconds remaining in the current cycle — present only when status === 'in_use'. */
@@ -17,6 +17,8 @@ export interface MachineCardMachine {
 export interface MachineCardLabels {
   /** Labels for the AvailabilityTag — all four keys required. */
   readonly availability: Record<AvailabilityStatus, string>;
+  /** Human-readable names for each machine type. */
+  readonly typeLabels: Record<MachineType, string>;
 }
 
 export interface MachineCardProps {
