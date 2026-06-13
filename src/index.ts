@@ -74,6 +74,9 @@ export type { AuthRequiredScreenProps } from './components/AuthRequiredScreen';
 export { Loader } from './components/Loader';
 export type { LoaderProps } from './components/Loader';
 
+export { Skeleton } from './components/Skeleton';
+export type { SkeletonProps } from './components/Skeleton';
+
 export { BottomSheet } from './components/BottomSheet';
 export type { BottomSheetProps } from './components/BottomSheet';
 
