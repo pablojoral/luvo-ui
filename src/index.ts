@@ -110,6 +110,9 @@ export type { LaundryMapMarkerProps, LaundryMarkerData, LaundryMachine, LaundryL
 export { MachineCard } from './components/MachineCard';
 export type { MachineCardProps, MachineCardMachine, MachineCardLabels } from './components/MachineCard';
 
+export { ProgramSelector } from './components/ProgramSelector';
+export type { ProgramSelectorProps, ProgramOption } from './components/ProgramSelector';
+
 export type { BaseTheme } from './tokens/types';
 // useTheme, DefaultTheme, DarkTheme, and new theme types (Theme, ThemeConstants, etc.)
 // are re-exported via 'export * from ./theme' above.

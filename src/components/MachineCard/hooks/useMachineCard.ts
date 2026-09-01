@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import type { AvailabilityStatus } from '../../AvailabilityTag/types';
 import type { FontColor } from '../../../tokens/types';
 import type { IconName } from '../../SvgIcon/types';
@@ -23,8 +24,23 @@ export const useMachineCard = (machine: MachineCardMachine, onPress?: () => void
   const availabilityStatus: AvailabilityStatus = statusMap[machine.status];
   const inUse = machine.status === 'in_use';
   const cycleSeconds = machine.cycleRemainingSeconds;
-  const remainingTime = cycleSeconds != null ? formatMMSS(cycleSeconds) : '--:--';
+
+  const [remaining, setRemaining] = useState(cycleSeconds ?? 0);
+
+  // Sync to server value when a WebSocket update arrives.
+  useEffect(() => {
+    setRemaining(cycleSeconds ?? 0);
+  }, [cycleSeconds]);
+
+  // Tick down once per second between WebSocket updates.
+  useEffect(() => {
+    if (!inUse || remaining <= 0) return;
+    const timer = setTimeout(() => setRemaining(r => Math.max(0, r - 1)), 1000);
+    return () => clearTimeout(timer);
+  }, [inUse, remaining]);
+
   const showTimer = inUse && cycleSeconds != null;
+  const remainingTime = showTimer ? formatMMSS(remaining) : '--:--';
   const chevronColor: FontColor = onPress ? 'font-primary' : 'font-disabled';
 
   return { iconName, availabilityStatus, remainingTime, showTimer, chevronColor };
